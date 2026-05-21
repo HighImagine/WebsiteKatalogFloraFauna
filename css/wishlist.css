@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: #3e7b27;
+    width: 100%;
+    height: 92px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+}
+
+.navbar-tengah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    margin: 10px 50px;
+    width: 80px;
+    height: 71px;
+}
+
+.search-bar {
+    font-family: 'poppins';
+    background-image: url(/website/image/Search.png);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    padding: 8px 12px 8px 36px;
+    margin-top: 17px;
+    background-position: 6px;
+    height: 30px;
+    width: 900px;
+    border-radius: 25px;
+    border-style: none;
+}
+
+.menu {
+    display: flex;
+    gap: 170px;
+}
+
+.menu a {
+    color: #fef9f2;
+    font-family: 'poppins';
+    text-decoration: none;
+    font-size: 16px;
+}
+.profile {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0px 30px 20px 0px;
+}
+.kotak-wishlist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 300px;
+    height: 300px;
+    margin: 25px 0px 20px 100px;
+}
+.kotak-wishlist img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.wishlist-title {
+    font-family: 'poppins';
+    font-size: 24px;
+    font-weight: 700px;
+    margin: 20px 0px 0px 100px;
+}
+.wishlist-desc {
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: 400px;
+    margin: 0px 0px 0px 100px;
+    opacity: 0.5;
+}

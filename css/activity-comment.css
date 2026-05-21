@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 250px;
+    height: 100px;
+    width: 100vw;
+    padding: 0 30px;
+    background-color: #f7f7f7;
+    z-index: 10;
+}
+
+.header-kanan {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(185, 255, 102, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.sidebar-menu  {
+    display: block;
+    padding-right: 10px;
+}
+.menu-atas, .menu-bawah  {
+    padding-left: 20px;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+    height: 80px;
+    margin: 0;
+}
+.menu-atas img {
+    width: 36px;
+    height: 36px;
+}
+.menu-atas ul, .menu-bawah ul {
+    list-style: none;
+    text-align: left;
+    
+}
+.menu-atas ul li, .menu-bawah ul li {
+    margin: 20px 0;
+}
+.menu-atas li a, .menu-bawah li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.menu1, .menu2, .menu3, .menu4, .menu5 {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+.content {
+    margin-left: 250px;
+    padding: 20px 40px;
+}
+main {
+    margin: 0;
+}
+.activity-comment-text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+    max-width: 350px;
+}
+.activity-comment-text p {
+    font-size: 18px;
+    font-weight: 500;
+}
+.activity-comment-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.comment1-container, .comment2-container, .comment3-container {
+    padding: 20px;
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.comment1, .comment2, .comment3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+.comment1-kiri, .comment2-kiri, .comment3-kiri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex: 1;
+}
+.comment1-profile, .comment2-profile, .comment3-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.comment-user {
+    max-width: 600px;
+}
+.edit-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+.edit-button img, .delete-button img {
+    width: 26px;
+    height: 26px;
+}
+.edit-button button, .delete-button button {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #9c9c9c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.comment-container {
+    display: flex;
+    margin: 20px auto 0;
+    gap: 10px;
+}
+.waktu p {
+    font-size: 13px;
+}

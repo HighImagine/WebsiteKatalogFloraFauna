@@ -1,0 +1,765 @@
+Homepage sebelum Login CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.header {
+    width: 100%;
+    height: 80px;
+    border: 1px solid;
+    background-color: #3E7B27;
+    box-sizing: border-box;
+
+}
+input {    
+    text-decoration: none;
+    width: 900px;
+    height: 35px;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 190px;
+    border: none;
+    padding-left: 75px;
+    padding-top: 10px;
+    text-align: left;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+.logosearch {
+    position: absolute;
+    background-image: url(assets/image/Search.png);
+    margin-left: 200px;
+    margin-top: -30px;
+    width: 27px;
+    height: 25px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.logowallacea {
+    background-image: url(assets/image/logo_wallacea_putih.png);
+    margin-left: 60px;
+    margin-top: -45px;
+    width: 70px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.Register_Navbar_or_Header {
+    font-family:'poppins' , sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 90%;
+    margin-top: -28px;
+    padding-top: 3px;
+    width: 75px;
+    height: 25px;
+    background-color: #B9FF66;
+    border-radius: 100px;
+    text-align: center;
+    transition: transform 0.5s ease;
+
+}
+.Register_Navbar_or_Header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+
+}
+.menu {
+    display: flex;
+    font-family: sans-serif;
+    color: white;
+    margin-top: -60px;
+    margin-left: 320px;
+    gap: 100px;
+    margin-top: -5px;
+
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.menu a:hover {
+    text-decoration: underline;
+    
+}
+.landing{
+    background-image: url(assets/image/background_hero.svg);
+    width: 100%;
+    height: 880px;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    position: relative;
+    padding-top: 150px;
+
+}
+.kotak_landing {
+    background-color: #FEF9F2;
+    width: 950px;
+    height: 380px;
+    border-radius: 15px;
+    border: 1px solid;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+
+}
+.gambar_kotak_landing {
+    background-image: url(assets/image/komodoCTA.png);
+    width: 30%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    float: right;
+
+}
+.h2_landing {
+    font-family: 'poppins' , sans-serif ;
+    font-size: 25px;
+    padding-top: 40px;
+    padding-left: 35px;
+    line-height: 60px;
+       
+}
+.h5_landing {
+    font-family: 'poppins' , sans-serif;
+    padding-left: 35px;
+    padding-top: 10px;
+    line-height: 25px;
+
+}
+.baca_sekarang {
+    font-family: sans-serif;
+    color:#FEF9F2;
+    background-color: #3E7B27;
+    font-size: 20px;
+    height: 40px;
+    width: 180px;
+    border: 1px solid;
+    margin-left: 38px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+.baca_sekarang:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+
+}
+.baca_disini a {
+    color: white;
+
+}
+.signin_landing {
+    font-family: 'poppis' ,sans-serif;
+    font-size: 20px;  
+    line-height: 25px;
+    padding-left: 180px;
+    padding-top: 70px;
+
+}
+.sign_tombol_landing {
+    font-family: sans-serif;
+    font-size: 20px;
+    border: 2px solid;
+    background-color: #B9FF66;
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    border: 1px solid;
+    margin-left: 5px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding-top: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+.sign_tombol_landing:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+   
+}
+.green_line_1 {
+    width: 100%;
+    height: 15px;
+    background-color: #7EB142;
+
+}
+.recomendation {
+    width: 100%;
+    height: 330px;
+
+}
+.kotak_rekomendasi {
+    font-family: 'poppins' , sans-serif;
+    font-weight: 650;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: #B9FF66;
+    border-radius: 9px;
+    text-align: center;
+
+}
+.kotak_isi_rekomendasi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'poppins' , sans-serif;
+
+}
+.teks_rekomendasi {
+    padding-left: 40px;
+    padding-right: 20px;
+    border-left: 2px solid;
+    
+}
+.teks_rekomendasi_kanan {
+    padding-left: 40px;
+    padding-right: 40px;
+    border-right: 2px solid;
+    border-left: 2px solid;
+
+}
+.teks_rekomendasi h3 {
+    padding-bottom: 30px;
+    font-family: 'kanit' , sans-serif;
+    font-size: 25px;
+
+}
+.teks_rekomendasi_kanan h3 {
+    padding-bottom: 30px;
+    font-family: 'kanit' , sans-serif;
+    font-size: 25px;
+
+}
+.green_line_2 {
+    width: 100%;
+    height: 18px;
+    background-color: #7EB142;
+
+}
+.fakta_unik {
+    background-color: #0A400C;
+    padding-top: 20px;
+    width: 100%;
+    height: 900px;
+
+}
+.judul_fakta_unik {
+    background-color: #B9FF66;
+    border-radius: 5px;
+    padding-top: 8px; 
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    font-family: 'roboto' , sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 80px;
+
+}
+.all_kotak_fakta_unik {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+.Kotak_fakta_unik_1, .Kotak_fakta_unik_2, .Kotak_fakta_unik_3, 
+.Kotak_fakta_unik_4, .Kotak_fakta_unik_5
+{
+    margin-top: 50px;
+    width: 170px;
+    height: 550px;
+    border-radius: 15px;
+    border: 5px solid #FEF9F2;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+.Kotak_fakta_unik_1:hover, .Kotak_fakta_unik_2:hover, .Kotak_fakta_unik_3:hover, 
+.Kotak_fakta_unik_4:hover, .Kotak_fakta_unik_5:hover
+{
+    transform: translateY(-30px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+   
+}
+.keterangan_fakta_unik {
+    font-family: 'roboto';
+    background: white;
+    padding: 30px 10px;
+    text-align: left;
+    
+}
+.keterangan_fakta_unik h3 {
+    text-align: center;
+    font-size: 13px;
+
+}
+.keterangan_fakta_unik p {
+    font-size: 13px;
+
+} 
+cite {color: #3E7B27; font-weight: 700; cursor: pointer;}
+
+.G1_fakta_unik .keterangan_fakta_unik p {padding-top: 15px;}
+.G4_fakta_unik .keterangan_fakta_unik p {padding-top: 33px;}
+.G5_fakta_unik .keterangan_fakta_unik p {padding-top: 35px;}
+
+.line_teks_fakta_unik {
+    justify-content: center;
+    width: 140px;
+    border: 1px solid black;
+
+}
+.G1_fakta_unik {background-image: url(assets/image/fakta_unik1.png);}
+.G2_fakta_unik {background-image: url(assets/image/fakta_unik2.png);}
+.G3_fakta_unik {background-image: url(assets/image/fakta_unik3.png);}
+.G4_fakta_unik {background-image: url(assets/image/fakta_unik4.png);}
+.G5_fakta_unik {background-image: url(assets/image/fakta_unik5.png);}
+
+.flora_line {display: flex;}
+
+.green_line_awal { 
+    width: 220px;
+    height: 18px;
+    background-color: #7EB142;
+
+}
+.gray_line {
+    width: 400px;
+    height: 18px;
+    background-color: #454545;
+
+}
+.green_line_akhir { 
+    width: 100%;
+    height: 18px;
+    background-color: #7EB142;
+
+}
+.background_flora {
+    width: 100%;
+    height: 850px;
+
+}
+.judul_flora {
+    background-color: #FBEEC1;
+    width: 268px;
+    height: 45px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'roboto' , sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 147px;
+    
+}
+.kotak_flora {
+    position: relative;
+    font-family: 'poppins',sans-serif;
+    font-weight: 500;
+    margin: 30px auto;
+    padding-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #0A400C, #B9FF66);
+    width: 1200px;
+    height: 400px;
+
+}
+.pengatur_kotak_flora {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.pembentuk_flora_1, .pembentuk_flora_2, .pembentuk_flora_3,
+.pembentuk_flora_4, .pembentuk_flora_5, .pembentuk_flora_6, 
+.pembentuk_flora_7 {
+    width: 170px;
+    height: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+.pembentuk_flora_1:hover, .pembentuk_flora_2:hover, .pembentuk_flora_3:hover,
+.pembentuk_flora_4:hover, .pembentuk_flora_5:hover, .pembentuk_flora_6:hover, 
+.pembentuk_flora_7:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+
+}
+.pembentuk_flora_1 p, .pembentuk_flora_2 p, .pembentuk_flora_3 p,
+.pembentuk_flora_4 p, .pembentuk_flora_5 p, .pembentuk_flora_6 p, 
+.pembentuk_flora_7 p {
+    background-color: #B9FF66;
+    padding-top: 8px;
+    width: 100%;
+    height: 40px;
+    color: #000000;
+    font-family: 'poppins' , sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+
+}
+.pengatur_kotak_flora .G1{background-image: url(assets/image/flora1.png);}
+.pengatur_kotak_flora .G2{background-image: url(assets/image/flora2.png);}
+.pengatur_kotak_flora .G3{background-image: url(assets/image/flora3.png);}
+.pengatur_kotak_flora .G4{background-image: url(assets/image/flora4.png);}
+.pengatur_kotak_flora .G5{background-image: url(assets/image/flora5.png);}
+.pengatur_kotak_flora .G6{background-image: url(assets/image/flora6.png);}
+.pengatur_kotak_flora .G7{background-image: url(assets/image/flora7.png);}
+
+.kotak_klik_Disini_flora {
+    width: 600px;
+    height: 200px;
+    background-color: #0A400C;
+    color: #FEF9F2;
+    padding-left: 0px;
+    padding-top: 30px;
+    font-family:'poppins',sans-serif ;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    margin: 50px auto 80px auto;
+
+
+}
+.tombol_klik_Disini_flora {
+    background-color: #B9FF66;
+    color: #000000;
+    border-radius: 8px;
+    padding-top: 10px; 
+    width: 240px;
+    height: 50px;
+    text-align: center;
+    font-family: 'kanit' , sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin:30px auto 30px auto ;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+.tombol_klik_Disini_flora:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+
+}
+.fauna_line {display: flex;}
+
+.green_line_awal { 
+    width: 220px;
+    height: 18px;
+    background-color: #7EB142;
+
+}
+.gray_line {
+    width: 400px;
+    height: 18px;
+    background-color: #454545;
+
+}
+.green_line_akhir { 
+    width: 100%;
+    height: 18px;
+    background-color: #7EB142;
+
+}
+.background_fauna {
+    background-image: url(assets/image/background_fauna.png);
+    width: 100%;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    position: relative;
+
+}
+.judul_fauna {
+    background-color: #FBEEC1;
+    width: 268px;
+    height: 45px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'roboto' , sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 147px;
+    
+}
+.kotak_fauna {
+    position: relative;
+    font-family: 'poppins',sans-serif;
+    font-weight: 500;
+    margin: 30px auto;
+    padding-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #0A400C, #B9FF66);
+    width: 1200px;
+    height: 400px;
+
+}
+.pengatur_kotak_fauna {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    
+}
+.pembentuk_fauna_1, .pembentuk_fauna_2, .pembentuk_fauna_3,
+.pembentuk_fauna_4, .pembentuk_fauna_5, .pembentuk_fauna_6, 
+.pembentuk_fauna_7 {
+    width: 170px;
+    height: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+.pembentuk_fauna_1:hover, .pembentuk_fauna_2:hover, .pembentuk_fauna_3:hover,
+.pembentuk_fauna_4:hover, .pembentuk_fauna_5:hover, .pembentuk_fauna_6:hover, 
+.pembentuk_fauna_7:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+
+
+}
+.pembentuk_fauna_1 p, .pembentuk_fauna_2 p, .pembentuk_fauna_3 p,
+.pembentuk_fauna_4 p, .pembentuk_fauna_5 p, .pembentuk_fauna_6 p, 
+.pembentuk_fauna_7 p{
+    background-color: #B9FF66;
+    padding-top: 8px;
+    width: 100%;
+    height: 40px;
+    color: #000000;
+    font-family: 'poppins' , sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+
+}
+.pengatur_kotak_fauna .G1{background-image: url(assets/image/fauna1.png);}
+.pengatur_kotak_fauna .G2{background-image: url(assets/image/fauna2.png);}
+.pengatur_kotak_fauna .G3{background-image: url(assets/image/fauna3.png);}
+.pengatur_kotak_fauna .G4{background-image: url(assets/image/fauna4.png);}
+.pengatur_kotak_fauna .G5{background-image: url(assets/image/fauna5.png);}
+.pengatur_kotak_fauna .G6{background-image: url(assets/image/fauna6.png);}
+.pengatur_kotak_fauna .G7{background-image: url(assets/image/fauna7.png);}
+
+.kotak_klik_Disini_fauna {
+    width: 600px;
+    height: 200px;
+    background-color: #0A400C;
+    color: #FEF9F2;
+    padding-left: 0px;
+    padding-top: 30px;
+    font-family:'poppins',sans-serif ;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    margin: 50px auto 80px auto;
+
+
+}
+.tombol_klik_Disini_fauna {
+    background-color: #B9FF66;
+    color: #000000;
+    border-radius: 8px;
+    padding-top: 10px; 
+    width: 240px;
+    height: 50px;
+    text-align: center;
+    font-family: 'kanit' , sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin:30px auto 30px auto ;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+.tombol_klik_Disini_fauna:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+
+}
+.green_line_3 {
+    width: 100%;
+    height: 15px;
+    background-color: #7EB142;
+
+}
+.About_background {
+    width: 100%;
+    height: 400px;
+
+}
+.logoAndteks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 900px;
+    margin-top: 50px;
+    
+}
+.logohitam {
+    background-image: url(assets/image/logo_wallacea_hitam.png);
+    background-size: cover;
+    background-position: center;
+    width: 90px;
+    height: 80px;
+    margin: auto;
+    
+}
+.tekslogo {
+    padding-top: 8px;
+    font-family: 'poppins' , sans-serif;
+    font-weight: 500;
+    
+}
+.pengatur_about {
+    display: flex;
+    gap: 150px;
+    margin-top: -120px;
+    margin-left: 500px;
+
+}
+.teks_about {
+    line-height: 45px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+
+}
+.about_line {
+    width: 1200px;
+    border: 1px solid;
+    margin: 50px auto;
+
+}
+.Contact_us {
+    font-family: 'poppins' , sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: #B9FF66;
+    border-radius: 15px;
+    text-align: center;
+
+}
+.pengatur_logo_di_About {
+    display: flex;
+    gap: 20px;
+    margin-top: 70px;
+    justify-content: center;
+
+}
+.pembentuk_logo_1, .pembentuk_logo_2, .pembentuk_logo_3,
+.pembentuk_logo_4, .pembentuk_logo_5 {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #D9D9D9;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+.pembentuk_logo_1:hover, .pembentuk_logo_2:hover, .pembentuk_logo_3:hover,
+.pembentuk_logo_4:hover, .pembentuk_logo_5:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+
+}
+.Instagram {background-image: url(../img/Logo_Instagram.png);}
+.Facebook {background-image: url(../img/Logo_Facebook.png);}
+.Twitter {background-image: url(../img/Logo_Twitter.png);}
+.Youtube {background-image: url(../img/Logo_Youtube.png);}
+.Tiktok {background-image: url(../img/Logo_Tiktok.png);}
+
+.logoAndteks_Copyright {
+    display: flex;
+    background-color: #000000;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logoCopyright {
+    width: 20px;
+    height: 21px;
+    background-image: url(assets/image/copyright.png);
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+
+}
+.teksCopyright {
+    color: #ffffff;
+    font-family: 'poppins' , sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+
+}
