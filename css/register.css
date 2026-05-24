@@ -30,11 +30,12 @@
     background-size: cover;
     display: block;
 }
-.input {
+.form-container {
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .logo {
     margin: 10px 0px 10px 0px;
@@ -51,10 +52,16 @@
     display: flex;
     flex-direction: column;
     font-family: 'poppins';
-    font-weight: 500;
+    font-weight: 300;
     font-size: 20px;
     gap: 3px;
     
+}
+.email-placeholder {
+    font-family: 'poppins';
+    font-weight: 100;
+    font-size: 20px;
+    color: #888;
 }
 .input-email, .input-password {
     font-family: 'poppins';

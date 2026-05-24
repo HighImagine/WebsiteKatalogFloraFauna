@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Wallacea</title>
-    <base
+    <base href="/website/">
     <link rel="stylesheet" href="css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,23 +23,23 @@
                 <p style="font-size: 17px;">Eksplorasi Kehidupan Langka dalam Satu Tempat</p>
             </div>
         </div>
-        <div class="input">
-            <div class="logo-input">
+        <div class="form-container">
+            <div class="form-logo">
                 <img class="logo" src="assets/image/logo-hitam.svg">
             </div>
-            <div class="form">
-                <div class="email">Masukkan Email
-                    <input class="input-email" type="text" placeholder="email anda">
+            <form class="register" action="proses_register.php" method="post">
+                <div class="email" type="text" name="email">
+                    <p class="email-placeholder">Masukkan Email</p>
+                    <input class="input-email" type="text" name="email" placeholder="email anda">
                 </div>
                 <div class="password">Masukkan Password
-                    <input class="input-password" type="password" placeholder="password">
+                    <input class="input-password" type="password" name="password" placeholder="password">
                 </div>
-                <form action="login.html" method="get">
-                    <button class="form-send">Register</button>
-                </form>
-                <div class="or" style="font-family: 'Poppins';">
-                    <span>or</span>
-                </div>
+                <button class="form-send" type="submit" name="submit">Register</button>
+            </form>
+            <div class="or" style="font-family: 'Poppins';">
+                <span>or</span>
+            </div>
                 <button class="google-btn">
                     <img src="assets/image/google.svg">
                     <span>Sign in with Google</span>
