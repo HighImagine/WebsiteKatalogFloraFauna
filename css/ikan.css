@@ -34,7 +34,7 @@ a {
 
 .logosearch {
     position: absolute;
-    background-image: url(/website/image/Search.png);
+    background-image: url(assets/image/Search.png);
     margin-left: 200px;
     margin-top: -30px;
     width: 27px;
@@ -45,7 +45,7 @@ a {
 }
 
 .logowallacea {
-    background-image: url(/website/image/logo-putih.svg);
+    background-image: url(assets/image/logo-putih.svg);
     margin-left: 60px;
     margin-top: -45px;
     width: 70px;
@@ -56,7 +56,7 @@ a {
 }
 
 .logoprofil {
-    background-image: url(/website/image/profile-dummy1.svg);
+    background-image: url(assets/image/profile-dummy1.svg);
     position: absolute;
     left: 1150px;
     top: 20px;
@@ -108,11 +108,13 @@ a {
     width: 1300px;
     height: auto;
 }
+
 .informasi {
     display: flex;
     font-family: 'poppins';
     gap: 10px;
 }
+
 .informasi-image {
     width: 223px;
     height: 339px;
@@ -120,20 +122,24 @@ a {
     margin: 30px;
     object-fit: cover;
 }
+
 .informasi-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .title-container {
     display: flex;
 }
+
 .informasi-title {
     font-size: 24px;
     font-weight: 600;
     max-width: 600px;
     margin: 30px 0px 0px 0px;
 }
+
 .button {
     display: flex;
     align-items: center;
@@ -150,17 +156,20 @@ a {
     height: 40px;
     transition: transform 0.15s ease;
 }
+
 .button:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
+
 .informasi-desc {
     font-size: 18px;
     font-weight: 400;
     max-width: 920px;
     text-align: justify;
-    
+
 }
+
 .informasi-desc p {
     margin-bottom: 10px;
 }
