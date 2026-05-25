@@ -2,17 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+    font-family: 'Poppins';
+
 }
+
 .header {
     width: 100%;
     height: 80px;
     border: 1px solid;
     background-color: #3E7B27;
-    
+
 
 }
-input {    
+
+input {
     text-decoration: none;
     width: 900px;
     height: 35px;
@@ -24,34 +27,38 @@ input {
     padding-left: 75px;
     padding-top: 10px;
     text-align: left;
-    
+
 }
+
 a {
     text-decoration: none;
     color: black;
-    
+
 }
+
 .logosearch {
     position: absolute;
     background-image: url(../assets/image/Search.png);
     margin-left: 200px;
     margin-top: -30px;
-    width: 27px;
+    width: 25px;
     height: 25px;
     background-position: center;
     background-size: cover;
-    
+
 }
+
 .logowallacea {
-    background-image: url(../assets/image/logo_wallacea_putih.png);
+    background-image: url(../assets/image/logo-putih.svg);
     margin-left: 60px;
     margin-top: -45px;
-    width: 70px;
+    width: 80px;
     height: 60px;
     background-position: center;
     background-size: cover;
-    
+
 }
+
 .logoprofil {
     background-image: url(../assets/image/profile-dummy1.svg);
     position: absolute;
@@ -65,9 +72,10 @@ a {
     cursor: pointer;
 
 }
+
 .menu {
     display: flex;
-    font-family: sans-serif;
+    font-family: 'Poppins';
     color: white;
     margin-top: -60px;
     margin-left: 320px;
@@ -75,6 +83,7 @@ a {
     margin-top: -5px;
 
 }
+
 .menu a {
     color: white;
     text-decoration: none;
@@ -82,20 +91,24 @@ a {
     cursor: pointer;
 
 }
+
 .menu a:hover {
     text-decoration: underline;
 
 }
+
 .text h1 {
-    font-family: 'poppins';
+    font-family: 'Poppins';
     font-weight: 500;
     font-size: 35px;
     color: #3E7B27;
     text-align: center;
     width: 100%;
     height: 35px;
+    margin-bottom: 75px;
 
 }
+
 .background {
     background-image: url(../assets/image/background-hero.svg);
     width: 100%;
@@ -104,22 +117,30 @@ a {
     background-size: cover;
     border: none;
     padding-top: 100px;
-    
+
 
 }
+
 .all_kotak {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(125px, 2fr));
-    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    gap: 30px;
     justify-items: center;
     max-width: 800px;
     margin-top: -50px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 
 }
-.pembentuk_1, .pembentuk_2, .pembentuk_3, .pembentuk_4,
-.pembentuk_5, .pembentuk_6, .pembentuk_7, .pembentuk_8 {
+
+.pembentuk_1,
+.pembentuk_2,
+.pembentuk_3,
+.pembentuk_4,
+.pembentuk_5,
+.pembentuk_6,
+.pembentuk_7,
+.pembentuk_8 {
     width: 150px;
     height: 200px;
     border-radius: 15px;
@@ -133,34 +154,71 @@ a {
     cursor: pointer;
 
 }
-.pembentuk_1:hover, .pembentuk_2:hover, .pembentuk_3:hover, .pembentuk_4:hover,
-.pembentuk_5:hover, .pembentuk_6:hover, .pembentuk_7:hover, .pembentuk_8:hover {
+
+.pembentuk_1:hover,
+.pembentuk_2:hover,
+.pembentuk_3:hover,
+.pembentuk_4:hover,
+.pembentuk_5:hover,
+.pembentuk_6:hover,
+.pembentuk_7:hover,
+.pembentuk_8:hover {
     transform: translateY(-5px);
 
 }
-.pembentuk_1 p, .pembentuk_2 p, .pembentuk_3 p, .pembentuk_4 p,
-.pembentuk_5 p, .pembentuk_6 p, .pembentuk_7 p, .pembentuk_8 p {
-    background-color: #454545;
+
+.pembentuk_1 p,
+.pembentuk_2 p,
+.pembentuk_3 p,
+.pembentuk_4 p,
+.pembentuk_5 p,
+.pembentuk_6 p,
+.pembentuk_7 p,
+.pembentuk_8 p {
+    background-color: #fff685;
     width: 100%;
-    height: 70px;
-    color: white;
-    font-family: 'poppins';
+    height: 55px;
+    color: #2f2f2f;
+    font-family: 'Poppins';
     font-weight: 400;
-    font-size: 23px;
+    font-size: 18px;
     text-align: center;
-   
-}
-.reptil p,.burung p,.ikan p,.mamalia p,.pohon p,.bunga p {
-    padding-top: 20px;
     letter-spacing: 5px;
-    
+
 }
-.reptil {background-image: url(../assets/image/reptil-search.png);}
-.mamalia {background-image: url(../assets/image/mamalia-search.png);}
-.ikan {background-image: url(../assets/image/ikan-search.png);}
-.burung {background-image: url(../assets/image/burung-search.png);}
-.buah {background-image: url(../assets/image/t.buah-search.png);}
-.tanaman_buah {background-image: url(../assets/image/t.buah-search.png);}
-.pohon {background-image: url(../assets/image/pohon-search.png);}
-.bunga {background-image: url(../assets/image/bunga-search.png);}
-.tanaman_obat {background-image: url(../assets/image/t.obat-search.png);}
+
+.reptil {
+    background-image: url(../assets/image/reptil-search.png);
+}
+
+.mamalia {
+    background-image: url(../assets/image/mamalia-search.png);
+}
+
+.ikan {
+    background-image: url(../assets/image/ikan-search.png);
+}
+
+.burung {
+    background-image: url(../assets/image/burung-search.png);
+}
+
+.buah {
+    background-image: url(../assets/image/t.buah-search.png);
+}
+
+.tanaman_buah {
+    background-image: url(../assets/image/t.buah-search.png);
+}
+
+.pohon {
+    background-image: url(../assets/image/pohon-search.png);
+}
+
+.bunga {
+    background-image: url(../assets/image/bunga-search.png);
+}
+
+.tanaman_obat {
+    background-image: url(../assets/image/t.obat-search.png);
+}

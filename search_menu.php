@@ -27,7 +27,6 @@
             <a href="Hompage_after.html"><p>Homepage</p></a>
             <a href="Category.html"><p>Category</p></a>
             <a href="information.html"><p>Information</p></a>
-            <a href="comunity.html"><p>Comunity</p></a>
         </div>
     </div>
 
