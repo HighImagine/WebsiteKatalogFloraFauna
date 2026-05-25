@@ -2,44 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page Before Login</title>
-    <base href="/website/">
-    <img rel="icon" type="image/svg" href="assets/image/logo-putih.svg">
-    <link rel="stylesheet" type="text/css" href="css/homepage-before.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <?php include 'template/head.php'; ?>
 </head>
 
 <body>
-    <div class="header">
-        <div class="Search_bar">
-            <form action="register.html"><input type="text" placeholder="Cari Disini..."></form>
-            <div class="logosearch"></div>
-        </div>
-        <div class="logowallacea"></div>
-        <a href="register.html">
-            <div class="Register_Navbar_or_Header">Register</div>
-        </a>
-        <div class="menu">
-            <a href="homepage-after.html">
-                <p>Homepage</p>
-            </a>
-            <a href="register.html">
-                <p>Category</p>
-            </a>
-            <a href="register.html">
-                <p>Information</p>
-            </a>
-            <a href="register.html">
-                <p>Comunity</p>
-            </a>
-        </div>
-    </div>
+    <?php include 'template/navbar.php'; ?>
     <div class="landing">
         <div class="kotak_landing">
             <div class="gambar_kotak_landing"></div>

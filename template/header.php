@@ -1,5 +1,5 @@
 <html>
-    <div class="header">
+    <header class="header">
         <div class="Search_bar">
             <form action="Search_menu.html"><input type="text" placeholder="Cari Disini..."></form>
             <div class="logosearch"></div>
@@ -27,5 +27,5 @@
                 <p>My List</p>
             </a>
         </div>
-    </div>
+    </header>
 </html>

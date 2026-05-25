@@ -23,9 +23,6 @@
         <a href="information.html">
             <p>Information</p>
         </a>
-        <a href="comunity.html">
-            <p>Comunity</p>
-        </a>
         <a href="wishlist.html">
             <p>My List</p>
         </a>

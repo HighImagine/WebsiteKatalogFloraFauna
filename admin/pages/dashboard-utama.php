@@ -53,58 +53,10 @@
             Admin.</h3>
         <p>Dashboard</p>
     </div>
-    <div class="card-container">
-        <div class="card1">
-            <div class="card1-text">
-                <h3>Total Flora & Fauna</h3>
-                <p>Total jumlah spesies Flora & Fauna terdata:</p>
-                <h2>192</h2>
-            </div>
-            <img class="card1-icon" src="assets/image/icon-flora.svg">
-        </div>
-        <div class="card2">
-            <h3>Top 4 Wilayah Data</h3>
-            <p>Top 4 Wilayah Persebaran Data di Kawasan Wallacea</p>
-            <div class="card2-list">
-                <ol>
-                    <li>Sulawesi (92 Data)</li>
-                    <li>Maluku (39 Data)</li>
-                    <li>NTT (35 Data)</li>
-                    <li>Papua (26 Data)</li>
-                </ol>
-            </div>
-        </div>
-        <div class="card3">
-            <div class="card3-text">
-                <h3>Jumlah Pengunjung Website</h3>
-                <img class="card3-icon" src="assets/image/icon-chart.svg">
-            </div>
-                <div class="card3-container">
-                    <img class="card3-line" src="assets/image/line-chart.svg">
-                </div>
-        </div>
-        <div class="card4">
-            <p class="card4-text">Aktivitas Hari Ini</p>
-            <div class="card4-activity">
-                <div class="activity-item1">
-                     <img src="assets/image/icon-dataDitambahkan.png">
-                    <p>Data Ditambahkan : 9</p>
-                </div>
-                <div class="activity-item2">
-                    <img src="assets/image/icon-dataDiverifikasi.png">
-                    <p>Data Diverifikasi : 2</p>
-                </div>
-                <div class="activity-item3">
-                    <img src="assets/image/icon-userBaru.png">
-                    <p>User Baru : 3</p>
-                </div>
-                <div class="activity-item4">
-                    <img src="assets/image/icon-dataDiperbarui.png">
-                    <p>Data Diperbarui : 1</p>
-                </div>
-            </div>
-        </div>
+    <div class="tambah-data">
+        <a href="admin/tambah.php"><button class="tambah-button">Tambah Data</button></a>
     </div>
+    
 </body>
 
 </html>
