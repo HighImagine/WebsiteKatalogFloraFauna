@@ -48,10 +48,10 @@
                 </button>
                 <div class="registered">
                     <div class="login-admin">
-                        <a href="login-admin.html">Login Sebagai Admin</a>
+                        <a href="admin/login-admin.php">Login Sebagai Admin</a>
                     </div>
                     <div class="ada-akun">
-                        <a href="login.html">Sudah Punya Akun? Login</a>
+                        <a href="login.php">Sudah Punya Akun? Login</a>
                     </div>
                 </div>
             </div>

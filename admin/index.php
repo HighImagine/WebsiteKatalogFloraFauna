@@ -1,6 +1,6 @@
 <?php
-include 'cek.php';
-include 'koneksi.php';
+include '../cek.php';
+include '../koneksi.php';
 
 $level_akses = 'admin';
 
@@ -8,7 +8,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard-utama';
 
 $allowed = [
     'dashboard-utama',
-    'flora_fauna',
+    'spesies',
     'tambah',
     'edit',
     'user'
@@ -19,17 +19,18 @@ if (!in_array($page, $allowed)) {
 }
 ?>
 
-<?php include 'template/header.php'; ?>
-<?php include 'template/navbar.php'; ?>
+<?php include '../template/header.php'; ?>
+<?php include '../template/navbar.php'; ?>
 
 <div class="main">
     <div class="content">
 
         <?php
-        include 'admin/pages/' . $page . '.php';
+        echo $page;
+        include '../pages/' . $page . '.php';
         ?>
 
     </div>
 </div>
 
-<?php include 'template/footer.php'; ?>
+<?php include '../template/footer.php'; ?>

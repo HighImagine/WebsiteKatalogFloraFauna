@@ -198,7 +198,16 @@
     margin: 15px 0;
     padding: 10px;
 }
-
+.tambah-data {
+    display: flex;
+    align-items: center;
+    margin-left: 290px;
+    gap: 10px;
+    height: 50px;
+    color: #fef9f2;
+    border-style: none;
+    cursor: pointer;
+}
 @media (max-width: 800px) {
     .sidebar {
         transform: translateX(-100%);

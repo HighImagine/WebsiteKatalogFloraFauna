@@ -1,9 +1,30 @@
 <html>
 <?php
-include 'template/head.php';
+include '../../template/head.php';
 ?>
-
-<form action="proses_tambah.php" method="POST" enctype="multipart/form-data">
+<head>
+    <title>Tambah Data</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<form action="admin/action/proses_tambah.php" method="POST" enctype="multipart/form-data">
 
     <label>Nama Umum</label>
     <input type="text" name="nama_umum" required>

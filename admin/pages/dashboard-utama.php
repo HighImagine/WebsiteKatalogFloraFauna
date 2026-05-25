@@ -54,7 +54,7 @@
         <p>Dashboard</p>
     </div>
     <div class="tambah-data">
-        <a href="admin/tambah.php"><button class="tambah-button">Tambah Data</button></a>
+        <a href="admin/action/tambah_spesies.php"><button class="tambah-button">Tambah Data</button></a>
     </div>
     
 </body>

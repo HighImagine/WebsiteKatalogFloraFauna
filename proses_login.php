@@ -21,7 +21,7 @@ if (isset($_POST['login'])) {
 
             
             if ($data['level'] == 'admin') {
-                header("Location: dashboard-utama.php");
+                header("Location: admin/pages/dashboard-utama.php");
             } else if ($data['level'] == 'user') {
                 header("Location: index.php");
             }
