@@ -34,7 +34,7 @@ a {
 
 .logosearch {
     position: absolute;
-    background-image: url(assets/image/Search.png);
+    background-image: url(../assets/image/Search.png);
     margin-left: 200px;
     margin-top: -30px;
     width: 27px;
@@ -45,10 +45,11 @@ a {
 }
 
 .logowallacea {
-    background-image: url(assets/image/logo-putih.svg);
-    margin-left: 60px;
+    background-image: url(../assets/image/logo-putih.svg);
+    cursor: pointer;
+    margin-left: 45px;
     margin-top: -45px;
-    width: 70px;
+    width: 80px;
     height: 60px;
     background-position: center;
     background-size: cover;
@@ -56,7 +57,7 @@ a {
 }
 
 .logoprofil {
-    background-image: url(assets/image/profile-dummy1.svg);
+    background-image: url(../assets/image/profile-dummy1.svg);
     position: absolute;
     left: 1150px;
     top: 20px;
@@ -77,10 +78,10 @@ a {
 
 .menu {
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'poppins';
     color: white;
-    margin-top: -60px;
-    margin-left: 320px;
     gap: 80px;
     margin-top: -5px;
 
