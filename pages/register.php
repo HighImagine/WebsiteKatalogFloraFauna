@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
- echo "test";
-?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,11 +29,12 @@
                 <img class="logo" src="assets/image/logo-hitam.svg">
             </div>
             <form class="register" action="proses_register.php" method="post">
-                <div class="email" type="text" name="email">
-                    <p class="email-placeholder">Masukkan Email</p>
-                    <input class="input-email" type="text" name="email" placeholder="email anda">
+                <div class="username">
+                    <p class="username-placeholder">Masukkan Username</p>
+                    <input class="input-username" type="text" name="username" placeholder="username anda">
                 </div>
-                <div class="password">Masukkan Password
+                <div class="password">
+                    <p class="password-placeholder">Masukkan Password</p>
                     <input class="input-password" type="password" name="password" placeholder="password">
                 </div>
                 <button class="form-send" type="submit" name="submit">Register</button>

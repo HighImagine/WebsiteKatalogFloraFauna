@@ -23,10 +23,12 @@
         <img class="logo" src="assets/image/logo-hitam.svg">
     </div>
     <div class="form">
-        <div class="email">Email
-            <input class="input-email" type="text" placeholder="email anda">
+        <div class="username">
+            <p>Masukkan Username</p>
+            <input class="input-username" type="text" placeholder="username anda">
         </div>
-        <div class="password">Password
+        <div class="password">
+            <p></p>Password</p>
             <input class="input-password" type="password" placeholder="password">
         </div>
         <button class="form-send">Login</button>
