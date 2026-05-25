@@ -125,7 +125,6 @@ a {
     margin: auto;
     display: block;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -169,7 +168,6 @@ a {
     border-radius: 10px;
     padding: 20px;
     padding-top: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
 
@@ -177,7 +175,6 @@ a {
 
 .baca_sekarang:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -208,7 +205,6 @@ a {
     margin-top: 30px;
     border-radius: 10px;
     padding-top: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
 
@@ -216,7 +212,6 @@ a {
 
 .sign_tombol_landing:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -337,7 +332,6 @@ a {
     height: 550px;
     border-radius: 15px;
     border: 5px solid #FEF9F2;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -354,8 +348,7 @@ a {
 .Kotak_fakta_unik_3:hover,
 .Kotak_fakta_unik_4:hover,
 .Kotak_fakta_unik_5:hover {
-    transform: translateY(-30px);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px);
 
 }
 
@@ -404,23 +397,23 @@ cite {
 }
 
 .G1_fakta_unik {
-    background-image: url(../assets/image/fakta_unik1.png);
+    background-image: url(assets/image/fakta_unik1.png);
 }
 
 .G2_fakta_unik {
-    background-image: url(../assets/image/fakta_unik2.png);
+    background-image: url(assets/image/fakta_unik2.png);
 }
 
 .G3_fakta_unik {
-    background-image: url(../assets/image/fakta_unik3.png);
+    background-image: url(assets/image/fakta_unik3.png);
 }
 
 .G4_fakta_unik {
-    background-image: url(../assets/image/fakta_unik4.png);
+    background-image: url(assets/image/fakta_unik4.png);
 }
 
 .G5_fakta_unik {
-    background-image: url(../assets/image/fakta_unik5.png);
+    background-image: url(assets/image/fakta_unik5.png);
 }
 
 .flora_line {
@@ -544,31 +537,31 @@ cite {
 }
 
 .pengatur_kotak_flora .G1 {
-    background-image: url(../assets/image/flora1.png);
+    background-image: url(assets/image/flora1.png);
 }
 
 .pengatur_kotak_flora .G2 {
-    background-image: url(../assets/image/flora2.png);
+    background-image: url(assets/image/flora2.png);
 }
 
 .pengatur_kotak_flora .G3 {
-    background-image: url(../assets/image/flora3.png);
+    background-image: url(assets/image/flora3.png);
 }
 
 .pengatur_kotak_flora .G4 {
-    background-image: url(../assets/image/flora4.png);
+    background-image: url(assets/image/flora4.png);
 }
 
 .pengatur_kotak_flora .G5 {
-    background-image: url(../assets/image/flora5.png);
+    background-image: url(assets/image/flora5.png);
 }
 
 .pengatur_kotak_flora .G6 {
-    background-image: url(../assets/image/flora6.png);
+    background-image: url(assets/image/flora6.png);
 }
 
 .pengatur_kotak_flora .G7 {
-    background-image: url(../assets/image/flora7.png);
+    background-image: url(assets/image/flora7.png);
 }
 
 .kotak_klik_Disini_flora {
@@ -605,9 +598,7 @@ cite {
 }
 
 .tombol_klik_Disini_flora:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
-
+    transform: translateY(-15px);
 }
 
 .fauna_line {
@@ -636,7 +627,7 @@ cite {
 }
 
 .background_fauna {
-    background-image: url(../assets/image/background_fauna.png);
+    background-image: url(assets/image/background_fauna.png);
     width: 100%;
     height: 850px;
     background-position: center;
@@ -711,8 +702,7 @@ cite {
 .pembentuk_fauna_5:hover,
 .pembentuk_fauna_6:hover,
 .pembentuk_fauna_7:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px);
 
 }
 
@@ -736,31 +726,31 @@ cite {
 }
 
 .pengatur_kotak_fauna .G1 {
-    background-image: url(../assets/image/fauna1.png);
+    background-image: url(assets/image/fauna1.png);
 }
 
 .pengatur_kotak_fauna .G2 {
-    background-image: url(../assets/image/fauna2.png);
+    background-image: url(assets/image/fauna2.png);
 }
 
 .pengatur_kotak_fauna .G3 {
-    background-image: url(../assets/image/fauna3.png);
+    background-image: url(assets/image/fauna3.png);
 }
 
 .pengatur_kotak_fauna .G4 {
-    background-image: url(../assets/image/fauna4.png);
+    background-image: url(assets/image/fauna4.png);
 }
 
 .pengatur_kotak_fauna .G5 {
-    background-image: url(../assets/image/fauna5.png);
+    background-image: url(assets/image/fauna5.png);
 }
 
 .pengatur_kotak_fauna .G6 {
-    background-image: url(../assets/image/fauna6.png);
+    background-image: url(assets/image/fauna6.png);
 }
 
 .pengatur_kotak_fauna .G7 {
-    background-image: url(../assets/image/fauna7.png);
+    background-image: url(assets/image/fauna7.png);
 }
 
 .kotak_klik_Disini_fauna {
@@ -797,8 +787,7 @@ cite {
 }
 
 .tombol_klik_Disini_fauna:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px);
 
 }
 
@@ -825,7 +814,7 @@ cite {
 }
 
 .logohitam {
-    background-image: url(../assets/image/logo_wallacea_hitam.png);
+    background-image: url(assets/image/logo_wallacea_hitam.png);
     background-size: cover;
     background-position: center;
     width: 90px;
@@ -912,23 +901,23 @@ cite {
 }
 
 .Instagram {
-    background-image: url(../img/Logo_Instagram.png);
+    background-image: url(assets/image/instagram.png);
 }
 
 .Facebook {
-    background-image: url(../img/Logo_Facebook.png);
+    background-image: url(assets/image/facebook.png);
 }
 
 .Twitter {
-    background-image: url(../img/Logo_Twitter.png);
+    background-image: url(assets/image/x.png);
 }
 
 .Youtube {
-    background-image: url(../img/Logo_Youtube.png);
+    background-image: url(assets/image/youtube.png);
 }
 
 .Tiktok {
-    background-image: url(../img/Logo_Tiktok.png);
+    background-image: url(assets/image/tiktok.png);
 }
 
 .logoAndteks_Copyright {
@@ -943,7 +932,7 @@ cite {
 .logoCopyright {
     width: 20px;
     height: 21px;
-    background-image: url(../assets/image/copyright.png);
+    background-image: url(assets/image/copyright.png);
     background-position: center;
     background-size: cover;
     margin-right: 5px;
