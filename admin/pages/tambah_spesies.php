@@ -40,14 +40,14 @@ include '../../template/head.php';
 
     <label>Jenis</label>
     <select name="jenis" required>
-        <option value="">-- Pilih Jenis --</option>
+        <option value="">//  Pilih Jenis \\</option>
         <option value="flora">Flora</option>
         <option value="fauna">Fauna</option>
     </select>
 
     <label>Kategori</label>
     <select name="kategori" required>
-        <option value="">-- Pilih Kategori --</option>
+        <option value="">//  Pilih Kategori \\</option>
 
         <optgroup label="Flora">
             <option value="pohon">Pohon</option>

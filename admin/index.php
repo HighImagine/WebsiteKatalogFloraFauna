@@ -8,6 +8,8 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'dashboard-utama';
 
 $allowed = [
     'dashboard-utama',
+    'dashboard-flora',
+    'dashboard-fauna',
     'spesies',
     'tambah',
     'edit',
@@ -18,19 +20,33 @@ if (!in_array($page, $allowed)) {
     $page = 'dashboard-utama';
 }
 ?>
+<html>
 
-<?php include '../template/header.php'; ?>
-<?php include '../template/navbar.php'; ?>
+<head>
+    <?php
+    $css = "css/dashboard-utama.css";
+    $title = "Dashboard Utama";
+    include '../template/head.php'; ?>
+</head>
+<body>
+
+    <?php include '../template/admin-navbar.php'; ?>
+
+    <?php include '../template/sidebar.php'; ?>
+</html>
+
 
 <div class="main">
     <div class="content">
 
         <?php
         echo $page;
-        include '../pages/' . $page . '.php';
+        include '../admin/pages/' . $page . '.php';
         ?>
-
+        <?php
+        echo __DIR__;
+        exit; 
+        ?>
+        ?>
     </div>
 </div>
-
-<?php include '../template/footer.php'; ?>

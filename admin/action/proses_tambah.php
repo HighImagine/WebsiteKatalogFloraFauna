@@ -38,5 +38,5 @@ $query = mysqli_query($conn, "
 ");
 
 if($query){
-    header("Location: ../index.php?page=spesies");
+    header("Location: ../index.php?page=dashboard-utama");
 }

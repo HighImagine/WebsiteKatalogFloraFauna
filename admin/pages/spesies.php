@@ -1,7 +1,7 @@
 <?php
 include '../koneksi.php';
 
-$jenis = $_GET['jenis']; 
+$jenis = $_GET['jenis'] ?? ''; 
 $query = mysqli_query($conn, "SELECT * FROM spesies WHERE jenis = '$jenis'");
 ?>
 

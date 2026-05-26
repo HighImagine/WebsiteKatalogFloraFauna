@@ -7,45 +7,29 @@
     $css = "css/dashboard-flora.css";
 
     $level_akses = "admin";
-
-    include '../../cek.php';
-    include '../../template/head.php';
+    include '../index.php';
+    $query = mysqli_query(
+        $conn,
+        "SELECT * FROM spesies WHERE jenis='flora' ORDER BY id DESC"
+    );
     ?>
     <style>
-        .tambah-data {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    margin: 15px 290px 0;
-    height: 50px;
-    color: #fef9f2;
-    border-style: none;
-    cursor: pointer;
-}
-.tambah-button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 15px;
-    background-color: #b9ff66;
-    border-radius: 15px;
-    color: #fef9f2;
-    border-style: none;
-    cursor: pointer;
-}
-.tambah-button p {
-    font-size: 15px;
-    font-weight: 500;
-    color: black;
-}
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
     </style>
 </head>
 
 <body>
-    <?php include '../../template/admin-navbar.php'; ?>
 
-    <?php include '../../template/sidebar.php'; ?>
     <div class="selamat-datang-text">
         <h3 style="font-weight: 500;">Selamat Datang Kembali,
             <?php echo $_SESSION['username']; ?>
@@ -53,12 +37,47 @@
         <p>Flora</p>
     </div>
 
-    <div class="tambah-data">
-        <a class="tambah-button" href="admin/pages/tambah_spesies.php">
-            <img src="assets/image/icon-dataDitambahkan.png">
-            <button class="tambah-button"><p>Tambah Data</p></button>
-        </a>
-    </div>
+    <table border="1" cellpadding="10" cellspacing="0" style="margin:20px 290px; background:white;">
+        <tr>
+            <th>Gambar</th>
+            <th>Nama Umum</th>
+            <th>Nama Ilmiah</th>
+            <th>Kategori</th>
+            <th>Aksi</th>
+        </tr>
+
+        <?php while ($row = mysqli_fetch_assoc($query)): ?>
+            <tr>
+
+                <td>
+                    <img src="uploads/spesies/<?= $row['gambar']; ?>" width="80">
+                </td>
+
+                <td><?= $row['nama_umum']; ?></td>
+
+                <td>
+                    <i><?= $row['nama_ilmiah']; ?></i>
+                </td>
+
+                <td><?= $row['kategori']; ?></td>
+
+                <td>
+                    <a href="index.php?page=edit&id=<?= $row['id']; ?>">
+                        Edit
+                    </a>
+
+                    |
+
+                    <a href="action/hapus.php?id=<?= $row['id']; ?>&from=dashboard-flora">
+                        Hapus
+                    </a>
+                </td>
+
+            </tr>
+        <?php endwhile; ?>
+
+    </table>
+
 
 </body>
 
