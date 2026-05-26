@@ -6,10 +6,15 @@ include '../../template/head.php';
     <title>Tambah Data</title>
     <style>
         * {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'roboto', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
         }
         form {
             display: flex;
@@ -24,6 +29,7 @@ include '../../template/head.php';
         }
     </style>
 </head>
+<h1>Tambah Data Spesies</h1>
 <form action="admin/action/proses_tambah.php" method="POST" enctype="multipart/form-data">
 
     <label>Nama Umum</label>

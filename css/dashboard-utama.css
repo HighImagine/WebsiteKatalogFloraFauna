@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+
 .header {
     display: flex;
     justify-content: flex-end;
@@ -17,27 +18,44 @@
     background-color: #f7f7f7;
     z-index: 10;
 }
+
 .searching {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .search-input {
     padding: 5px 10px;
     border: 1px solid rgba(156, 156, 156, 0.3);
     border-radius: 15px;
     width: 200px;
 }
+
 .header-kanan {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+.admin-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .profile-admin {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.admin-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.admin-name {
+    font-weight: 300;
 }
 .sidebar {
     width: 250px;
@@ -51,46 +69,64 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    
+
 }
-.sidebar-menu  {
+
+.sidebar-menu {
     display: block;
     padding-right: 10px;
 }
-.menu-atas, .menu-bawah  {
+
+.menu-atas,
+.menu-bawah {
     padding-left: 20px;
     align-items: center;
 }
+
 .logo {
     width: 100px;
     height: 80px;
     margin: 0;
 }
-.menu-atas ul, .menu-bawah ul {
+
+.menu-atas ul,
+.menu-bawah ul {
     list-style: none;
     text-align: left;
-    
+
 }
-.menu-atas ul li, .menu-bawah ul li {
+
+.menu-atas ul li,
+.menu-bawah ul li {
     margin: 20px 0;
 }
-.menu-atas li a, .menu-bawah li a {
+
+.menu-atas li a,
+.menu-bawah li a {
     text-decoration: none;
     color: black;
     font-size: 16px;
     display: flex;
     align-items: center;
 }
-.menu-atas li img, .menu-bawah li img {
+
+.menu-atas li img,
+.menu-bawah li img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
-.menu1, .menu2, .menu3, .menu4, .menu5 {
+
+.menu1,
+.menu2,
+.menu3,
+.menu4,
+.menu5 {
     display: flex;
     gap: 20px;
     cursor: pointer;
 }
+
 .selamat-datang-text {
     margin: 20px 0 10px 290px;
     font-size: 15px;
@@ -99,11 +135,13 @@
     text-align: left;
     max-width: 350px;
 }
+
 .selamat-datang-text p {
     font-size: 24px;
     margin: 20px 0 0 0;
     font-weight: 500;
 }
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -113,6 +151,7 @@
     margin-right: 30px;
     max-width: calc(100% - 320px);
 }
+
 .card1 {
     width: 100%;
     height: 270px;
@@ -121,25 +160,30 @@
     border: 1px solid rgba(156, 156, 156, 0.3);
     padding: 15px;
 }
+
 .card1 h3 {
     font-weight: 500;
     font-size: 22px;
 }
+
 .card1 p {
     font-size: 15px;
     opacity: 0.3;
     max-width: 250px;
 }
+
 .card1 h2 {
     font-size: 64px;
     font-weight: 400;
     margin-top: 15px;
 }
+
 .card1 img {
     width: 30px;
     height: 30px;
     align-items: center;
 }
+
 .card2 {
     width: 100%;
     min-height: 270px;
@@ -147,14 +191,17 @@
     border-radius: 15px;
     padding: 20px;
 }
+
 .card2 p {
     font-size: 15px;
     opacity: 0.3;
 }
+
 .card2-list {
     margin: 8px 0 0 15px;
     align-items: center;
 }
+
 .card3 {
     display: flex;
     flex-direction: column;
@@ -164,23 +211,28 @@
     border-radius: 15px;
     padding: 20px;
 }
+
 .card3-text {
     display: flex;
 }
+
 .card3 h3 {
     font-weight: 500;
     font-size: 22px;
     max-width: 250px;
 }
+
 .card3-icon {
     width: 36px;
     height: 36px;
 }
+
 .card3-line {
     width: 80%;
     height: 150px;
     object-fit: contain;
 }
+
 .card4 {
     width: 100%;
     min-height: 250px;
@@ -188,7 +240,11 @@
     border-radius: 15px;
     padding: 20px;
 }
-.activity-item1, .activity-item2, .activity-item3, .activity-item4 {
+
+.activity-item1,
+.activity-item2,
+.activity-item3,
+.activity-item4 {
     display: flex;
     border: 1px solid rgba(156, 156, 156, 0.3);
     height: 50px;
@@ -198,39 +254,63 @@
     margin: 15px 0;
     padding: 10px;
 }
+
 .tambah-data {
     display: flex;
     align-items: center;
-    margin-left: 290px;
+    justify-content: flex-start;
     gap: 10px;
+    margin: 15px 290px 0;
     height: 50px;
     color: #fef9f2;
     border-style: none;
     cursor: pointer;
 }
+
+.tambah-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #b9ff66;
+    border-radius: 15px;
+    color: #fef9f2;
+    border-style: none;
+    cursor: pointer;
+}
+
+.tambah-button p {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
 @media (max-width: 800px) {
     .sidebar {
         transform: translateX(-100%);
         transition: transform 0.3s ease;
     }
-    
+
     .header {
         left: 0;
         width: 100%;
     }
-    
+
     .selamat-datang-text {
         margin-left: 20px;
     }
-    
+
     .card-container {
         grid-template-columns: 1fr 1fr;
         margin-left: 20px;
         margin-right: 20px;
         gap: 20px;
     }
-    
-    .card1, .card2, .card3, .card4 {
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
         min-height: 250px;
     }
 }
@@ -239,30 +319,30 @@
     .header-kanan {
         padding: 10px 15px;
     }
-    
+
     .admin-info {
-        display: none; 
+        display: none;
     }
-    
+
     .selamat-datang-text {
         margin: 80px 15px 20px 15px;
     }
-    
+
     .selamat-datang-text h3 {
         font-size: 1.3rem;
     }
-    
+
     .card-container {
         grid-template-columns: 1fr;
         margin-left: 15px;
         margin-right: 15px;
         gap: 15px;
     }
-    
+
     .card1 h2 {
         font-size: 2.5rem;
     }
-    
+
     .card4-activity {
         grid-template-columns: 1fr 1fr;
         gap: 15px;
@@ -275,8 +355,11 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
-    .card1, .card2, .card3, .card4 {
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
         min-height: 300px;
         padding: 30px;
     }
