@@ -1,12 +1,12 @@
 <?php
-include '../koneksi.php';
+include __DIR__ . '/../../koneksi.php';
 
 $jenis = $_GET['jenis'] ?? ''; 
 $query = mysqli_query($conn, "SELECT * FROM spesies WHERE jenis = '$jenis'");
 ?>
 
 <h2>Data Spesies</h2>
-
+    
 <a href="index.php?page=tambah">
     Tambah Data
 </a>
@@ -32,7 +32,7 @@ $query = mysqli_query($conn, "SELECT * FROM spesies WHERE jenis = '$jenis'");
             <td><?= $no++; ?></td>
 
             <td>
-                <img src="../uploads/spesies/<?= $row['gambar']; ?>" width="100">
+                <img src="<?= __DIR__ . '/../../uploads/spesies/' . $row['gambar']; ?>" width="100">
             </td>
 
             <td><?= $row['nama_umum']; ?></td>

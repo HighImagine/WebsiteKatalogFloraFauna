@@ -1,6 +1,6 @@
 <?php
 
-include '../../koneksi.php';
+include __DIR__ . '/../../koneksi.php';
 
 $id = $_GET['id'];
 
@@ -17,6 +17,7 @@ mysqli_query(
 );
 
 $from = $_GET['from'];
+
 if($data['jenis'] == 'flora'){
     header("Location: ../index.php?page=$from");
 }

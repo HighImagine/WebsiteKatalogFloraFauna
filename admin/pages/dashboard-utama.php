@@ -6,13 +6,13 @@
     $title = "Dashboard Utama";
     $css = "css/dashboard-utama.css";
     ?>
-    <?php include '../../template/head.php'; ?>
-    <?php include '../../cek.php'; ?>
+    <?php include __DIR__ . '/../../cek.php'; ?>
+    <?php include __DIR__ . '/../../template/head.php'; ?>
 </head>
 
 <body>
-    <?php include '../../template/admin-navbar.php'; ?>
-    <?php include '../../template/sidebar.php'; ?>
+    <?php include __DIR__ . '/../../template/admin-navbar.php'; ?>
+    <?php include __DIR__ . '/../../template/sidebar.php'; ?>
     <div class="selamat-datang-text">
         <h3 style="font-weight: 500;">
             Selamat Datang Kembali,
@@ -23,11 +23,8 @@
     </div>
 
     <div class="tambah-data">
-        <a href="index.php?page=tambah">
-            <button class="tambah-button">
-                <img src="assets/image/icon-dataDitambahkan.png" width="20" style="margin-right:5px;">
-
-                <p>Tambah Data</p>
-            </button>
+        <a href="admin/index.php?page=tambah_spesies" class="tambah-button">
+            <img src="assets/image/icon-dataDitambahkan.png" width="20" style="margin-right:5px;">
+            Tambah Data
         </a>
     </div>

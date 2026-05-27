@@ -7,7 +7,9 @@
     $css = "css/dashboard-flora.css";
 
     $level_akses = "admin";
-    include '../index.php';
+    include __DIR__ . '/../../cek.php';
+    include __DIR__ . '/../../koneksi.php';
+    include __DIR__ . '/../../template/head.php';
     $query = mysqli_query(
         $conn,
         "SELECT * FROM spesies WHERE jenis='flora' ORDER BY id DESC"
@@ -29,7 +31,8 @@
 </head>
 
 <body>
-
+    <?php include __DIR__ . '/../../template/admin-navbar.php'; ?>
+    <?php include __DIR__ . '/../../template/sidebar.php'; ?>
     <div class="selamat-datang-text">
         <h3 style="font-weight: 500;">Selamat Datang Kembali,
             <?php echo $_SESSION['username']; ?>

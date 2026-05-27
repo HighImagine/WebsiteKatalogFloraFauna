@@ -7,7 +7,10 @@
     $css = "css/dashboard-fauna.css";
 
     $level_akses = "admin";
-    include '../index.php';
+    include __DIR__ . '/../../cek.php';
+    include __DIR__ . '/../../koneksi.php';
+    include __DIR__ . '/../../template/head.php';
+
     $query = mysqli_query(
         $conn,
         "SELECT * FROM spesies WHERE jenis='fauna' ORDER BY id DESC"
@@ -19,14 +22,20 @@
             margin: 20px auto;
             border-collapse: collapse;
         }
-        td, th {
+
+        td,
+        th {
+            width: auto;
             border: 1px solid #ddd;
             padding: 8px;
         }
     </style>
+
 </head>
 
 <body>
+    <?php include __DIR__ . '/../../template/admin-navbar.php'; ?>
+    <?php include __DIR__ . '/../../template/sidebar.php'; ?>
     <div class="selamat-datang-text">
         <h3 style="font-weight: 500;">Selamat Datang Kembali,
             <?php echo $_SESSION['username']; ?>
@@ -64,7 +73,8 @@
 
                     |
 
-                    <a href="admin/action/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin hapus data?')"&from=dashboard-fauna">
+                    <a href="admin/action/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin hapus data?')"
+                        &from=dashboard-fauna">
                         Hapus
                     </a>
                 </td>
