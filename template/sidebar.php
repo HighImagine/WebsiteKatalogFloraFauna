@@ -12,7 +12,7 @@
             <div class="menu-bawah" style="margin: 240px 0px 0px 0px;">
                 <ul>
                     <li class="menu4"><img src="assets/image/icon-setting.svg"><a href="#">Settings</a></li>
-                    <li class="menu5"><img src="assets/image/icon-logout.svg"><a href="#">Logout</a></li>
+                    <li class="menu5"><img src="assets/image/icon-logout.svg"><a href="logout.php">Logout</a></li>
                 </ul>
             </div>
         </div>

@@ -3,16 +3,11 @@
 
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Wallacea</title>
-    <base href="/website/">
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <?php
+    $title = "Register";
+    $css = "css/register.css";
+    ?>
+    <?php include 'template/head.php'; ?>
 </head>
 
 <body>
