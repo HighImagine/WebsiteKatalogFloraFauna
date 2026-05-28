@@ -65,13 +65,13 @@
                 <td><?= $row['kategori']; ?></td>
 
                 <td>
-                    <a href="index.php?page=edit&id=<?= $row['id']; ?>">
+                    <a href="admin/action/edit.php?id=<?= $row['id']; ?>">
                         Edit
                     </a>
 
-                    |
+                    -
 
-                    <a href="action/hapus.php?id=<?= $row['id']; ?>&from=dashboard-flora">
+                    <a href="admin/action/hapus.php?id=<?= $row['id']; ?>&from=dashboard-flora">
                         Hapus
                     </a>
                 </td>

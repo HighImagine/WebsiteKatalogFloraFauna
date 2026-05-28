@@ -17,10 +17,5 @@ mysqli_query(
 );
 
 $from = $_GET['from'];
-
-if($data['jenis'] == 'flora'){
-    header("Location: ../index.php?page=$from");
-}
-else{
-    header("Location: ../index.php?page=$from");
-}
+echo $from;
+header("Location: ../index.php?page=dashboard-" . $data['jenis']);

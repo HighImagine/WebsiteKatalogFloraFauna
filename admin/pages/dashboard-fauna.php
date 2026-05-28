@@ -71,7 +71,7 @@
                         Edit
                     </a>
 
-                    |
+                    -
 
                     <a href="admin/action/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin hapus data?')"
                         &from=dashboard-fauna">

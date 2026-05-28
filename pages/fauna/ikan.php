@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
-    <?php include "../../template/head.php"; ?>
-    <link rel="stylesheet" href="css/ikan.css">
+    <?php include "../../template/head.php";
+    $title = "Ikan Kotak Tutul Putih";
+    $css = "css/ikan.css";
+    ?>
+    
 </head>
 
 
