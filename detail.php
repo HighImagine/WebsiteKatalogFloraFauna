@@ -13,6 +13,10 @@ $data = mysqli_fetch_assoc($query);
 if (!$data) {
     die("Data tidak ditemukan");
 }
+
+// Set judul halaman = nama ilmiah
+$title = $data['nama_ilmiah'];
+$css = "css/detail.css";
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +24,6 @@ if (!$data) {
 
 <head>
     <?php include "template/head.php"; ?>
-    <link rel="stylesheet" href="css/ikan.css">
 </head>
 
 <body>
@@ -30,15 +33,15 @@ if (!$data) {
     <div class="informasi-container">
         <div class="informasi">
 
-            <img class="informasi-image" src="uploads/<?= $data['gambar']; ?>" alt="<?= $data['nama_umum']; ?>">
+            <img class="informasi-image" src="uploads/spesies/<?= $data['gambar']; ?>" alt="<?= $data['nama_umum']; ?>">
 
             <div class="informasi-text">
 
                 <div class="title-container">
 
                     <div class="informasi-title">
-                        <p><?= $data['nama_ilmiah']; ?></p>
-                        <p>(<?= $data['nama_umum']; ?>)</p>
+                        <p><strong><?= htmlspecialchars($data['nama_ilmiah']); ?></strong></p>
+                        <p>(<?= htmlspecialchars($data['nama_umum']); ?>)</p>
                     </div>
 
                 </div>
@@ -46,7 +49,7 @@ if (!$data) {
                 <div class="informasi-desc">
 
                     <p>
-                        <?= ($data['deskripsi']); ?>
+                        <?= nl2br(htmlspecialchars($data['deskripsi'])); ?>
                     </p>
 
                 </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php include 'head.php'; ?>
     <?php include __DIR__ . '/../cek.php'; ?>
@@ -66,14 +67,27 @@
         .admin-name {
             font-weight: 300;
         }
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
     </style>
 </head>
 
 <div class="header">
     <div class="header-kanan">
         <div class="searching">
-            <input class="search-input" type="text" placeholder="Cari data flora & fauna...">
-
+            <form action="admin/index.php" method="GET">
+                <input type="hidden" name="page" value="cari">
+                <input class="search-input" type="text" name="keyword" placeholder="Cari data flora & fauna..."
+                    value="<?php echo isset($_GET['keyword']) ? htmlspecialchars($_GET['keyword']) : ''; ?>">
+                <button type="submit"
+                    style="background: none; border: none; cursor: pointer; font-size: 16px;">
+                    <img src="assets/image/search.svg" width="20">
+                </button>
+            </form>
         </div>
         <div class="admin-container">
             <img class="profile-admin" src="assets/image/profile-dummy1.svg">
@@ -84,4 +98,5 @@
 
     </div>
 </div>
+
 </html>

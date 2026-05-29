@@ -3,7 +3,6 @@
 
 <head>
     <title>Tambah Data</title>
-    <?php $jenis = $_GET['jenis'] ?? ''; ?>
     <style>
         * {
             font-family: 'roboto', sans-serif;
@@ -113,10 +112,11 @@
         }
     </style>
 </head>
+<?php $jenis = $_GET['jenis'] ?? ''; ?>
 
 <body>
     <h1>Tambah Data Spesies</h1>
-    <form action="admin/action/proses_tambah.php" method="GET" enctype="multipart/form-data">
+    <form action="admin/action/proses_tambah.php" method="POST" enctype="multipart/form-data">
 
         <label>Nama Umum</label>
         <input type="text" name="nama_umum" required>
@@ -126,41 +126,48 @@
 
         <input type="hidden" name="jenis" value="<?= $jenis; ?>">
 
-            <p>
-                Jenis:
-                <b><?= ucfirst($jenis); ?></b>
-            </p>
+        <p>
+            Jenis:
+            <b><?= ucfirst($jenis); ?></b>
+        </p>
 
-            <label>Kategori</label>
-            <select name="kategori" required>
-                <option value="">Pilih Kategori</option>
-                <optgroup label="Flora">
-                    <option value="pohon">Pohon</option>
-                    <option value="bunga">Bunga</option>
-                    <option value="tanaman-buah">Tanaman Buah</option>
-                    <option value="tanaman-obat">Tanaman Obat</option>
-                </optgroup>
-                <optgroup label="Fauna">
-                    <option value="mamalia">Mamalia</option>
-                    <option value="burung">Burung</option>
-                    <option value="ikan">Ikan</option>
-                    <option value="reptil">Reptil</option>
-                </optgroup>
-            </select>
+        <label>Kategori</label>
 
-            <div class="input-gambar">
-                <label>Gambar</label>
-                <div class="file-wrapper">
-                    <input type="file" name="gambar" accept="image/*" id="fileInput" required>
-                    <label for="fileInput" class="file-label">Pilih Gambar</label>
-                    <span class="file-name">Tidak ada file dipilih</span>
-                </div>
+        <select name="kategori" required>
+
+            <option value="">Pilih Kategori</option>
+
+            <?php if ($jenis == 'flora'): ?>
+
+                <option value="pohon">Pohon</option>
+                <option value="bunga">Bunga</option>
+                <option value="tanaman-buah">Tanaman Buah</option>
+                <option value="tanaman-obat">Tanaman Obat</option>
+
+            <?php elseif ($jenis == 'fauna'): ?>
+
+                <option value="mamalia">Mamalia</option>
+                <option value="burung">Burung</option>
+                <option value="ikan">Ikan</option>
+                <option value="reptil">Reptil</option>
+
+            <?php endif; ?>
+
+        </select>
+
+        <div class="input-gambar">
+            <label>Gambar</label>
+            <div class="file-wrapper">
+                <input type="file" name="gambar" accept="image/*" id="fileInput" required>
+                <label for="fileInput" class="file-label">Pilih Gambar</label>
+                <span class="file-name">Tidak ada file dipilih</span>
             </div>
+        </div>
 
-            <label>Deskripsi</label>
-            <textarea name="deskripsi" rows="8" required></textarea>
+        <label>Deskripsi</label>
+        <textarea name="deskripsi" rows="8" required></textarea>
 
-            <button type="submit">Simpan</button>
+        <button type="submit">Simpan</button>
     </form>
 
     <script>

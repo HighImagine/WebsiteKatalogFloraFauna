@@ -13,7 +13,8 @@ $allowed = [
     'spesies',
     'tambah_spesies',
     'edit',
-    'user'
+    'user',
+    'cari'
 ];
 
 if (!in_array($page, $allowed)) {
