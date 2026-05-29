@@ -40,6 +40,13 @@
         <p>Flora</p>
     </div>
 
+    <div class="tambah-data">
+        <a href="admin/index.php?page=tambah_spesies&jenis=flora" class="tambah-button">
+            <img src="assets/image/icon-dataDitambahkan.png" width="20" style="margin-right:5px;">
+            Tambah Flora
+        </a>
+    </div>
+
     <table border="1" cellpadding="10" cellspacing="0" style="margin:20px 290px; background:white;">
         <tr>
             <th>Gambar</th>
@@ -71,7 +78,8 @@
 
                     -
 
-                    <a href="admin/action/hapus.php?id=<?= $row['id']; ?>&from=dashboard-flora">
+                    <a href="admin/action/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin hapus data?')"
+                        &from=dashboard-flora">
                         Hapus
                     </a>
                 </td>

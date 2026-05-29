@@ -4,7 +4,7 @@ include '../../koneksi.php';
 
 $nama_umum = $_POST['nama_umum'];
 $nama_ilmiah = $_POST['nama_ilmiah'];
-$jenis = $_POST['jenis'];
+$jenis = $_POST['jenis'] ?? '';
 $kategori = $_POST['kategori'];
 $deskripsi = $_POST['deskripsi'];
 

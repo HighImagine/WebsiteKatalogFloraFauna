@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 include __DIR__ . '/../../koneksi.php';
 
 $jenis = $_GET['jenis'] ?? ''; 
@@ -60,4 +60,4 @@ $query = mysqli_query($conn, "SELECT * FROM spesies WHERE jenis = '$jenis'");
         </tr>
     <?php endwhile; ?>
 
-</table>
+</table> -->

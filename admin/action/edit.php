@@ -119,7 +119,7 @@ $data = mysqli_fetch_assoc($query);
 
     <h1>Edit Data Spesies</h1>
 
-    <form action="admin/action/proses_edit.php" method="POST" enctype="multipart/form-data">
+    <form action="../action/proses_edit.php" method="POST" enctype="multipart/form-data">
 
         <input type="hidden" name="id" value="<?= $data['id']; ?>">
         <input type="hidden" name="gambar_lama" value="<?= $data['gambar']; ?>">

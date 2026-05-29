@@ -42,6 +42,12 @@
         </h3>
         <p>Fauna</p>
     </div>
+    <div class="tambah-data">
+        <a href="admin/index.php?page=tambah_spesies&jenis=fauna" class="tambah-button">
+            <img src="assets/image/icon-dataDitambahkan.png" width="20" style="margin-right:5px;">
+            Tambah Fauna
+        </a>
+    </div>
     <table border="1" cellpadding="10" cellspacing="0" style="margin:20px 290px; background:white;">
         <tr>
             <th>Gambar</th>
@@ -67,7 +73,7 @@
                 <td><?= $row['kategori']; ?></td>
 
                 <td>
-                    <a href="index.php?page=edit&id=<?= $row['id']; ?>">
+                    <a href="admin/action/index.php?page=edit&id=<?= $row['id']; ?>">
                         Edit
                     </a>
 

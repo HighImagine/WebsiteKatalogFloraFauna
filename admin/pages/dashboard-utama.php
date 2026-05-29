@@ -21,10 +21,3 @@
 
         <p>Dashboard</p>
     </div>
-
-    <div class="tambah-data">
-        <a href="admin/index.php?page=tambah_spesies" class="tambah-button">
-            <img src="assets/image/icon-dataDitambahkan.png" width="20" style="margin-right:5px;">
-            Tambah Data
-        </a>
-    </div>
