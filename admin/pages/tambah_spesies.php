@@ -135,7 +135,7 @@
 
         <select name="kategori" required>
 
-            <option value="">Pilih Kategori</option>
+            <option value=""></option>
 
             <?php if ($jenis == 'flora'): ?>
 

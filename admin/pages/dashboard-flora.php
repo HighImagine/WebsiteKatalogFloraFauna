@@ -72,7 +72,7 @@
                 <td><?= $row['kategori']; ?></td>
 
                 <td>
-                    <a href="admin/action/edit.php?id=<?= $row['id']; ?>">
+                    <a href="admin/index.php?page=edit&id=<?= $row['id']; ?>">
                         Edit
                     </a>
 

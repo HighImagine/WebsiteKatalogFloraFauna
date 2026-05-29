@@ -1,121 +1,135 @@
-<?php
-// navbar.php - Untuk halaman user (frontend)
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-?>
-
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 50px;
-            background-color: #2c5f2d;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .logowallacea a {
-            display: block;
-            width: 150px;
-            height: 40px;
-            background-image: url('assets/logo.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            text-indent: -9999px;
-        }
-
-        /* Search Bar */
-        .Search_bar {
-            display: flex;
-            align-items: center;
-            background: white;
-            border-radius: 30px;
-            padding: 5px 15px;
-            gap: 10px;
-        }
-
-        .logosearch {
-            width: 20px;
-            height: 20px;
-            background-image: url('assets/search-icon.png');
-            background-size: contain;
-        }
-
-        .Search_bar input {
-            border: none;
-            outline: none;
-            padding: 8px;
-            width: 250px;
-            font-size: 14px;
-        }
-
-        /* Menu */
-        .menu {
-            display: flex;
-            gap: 25px;
-        }
-
-        .menu a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .menu a:hover {
-            color: #ffd700;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                gap: 15px;
-                padding: 15px;
-            }
-            .Search_bar input {
-                width: 180px;
-            }
-        }
-    </style>
-</head>
-<body>
+<!-- template/navbar.php - Layout 2 baris sesuai Figma -->
 
 <div class="header">
-    <div class="logowallacea">
-        <a href="index.php">Wallacea</a>
+    <!-- Baris 1: Logo + Search -->
+    <div class="top-row">
+        <div class="logowallacea"></div>
+        <div class="search-container">
+            <div class="logosearch"></div>
+            <input type="text" placeholder="Cari Disini...">
+        </div>
+        <div class="profil-container">
+            <img class="profile" src="assets/image/profile-dummy1.svg" alt="Profile">
+        </div>
     </div>
 
-    <div class="Search_bar">
-        <div class="logosearch"></div>
-        <form action="cari.php" method="GET">
-            <input type="text" name="keyword" placeholder="Cari flora & fauna..." autocomplete="off">
-        </form>
-    </div>
-
+    <!-- Baris 2: Menu -->
     <div class="menu">
-        <a href="index.php">Beranda</a>
-        <a href="flora.php">Flora</a>
-        <a href="fauna.php">Fauna</a>
-        <?php if (isset($_SESSION['username'])): ?>
-            <a href="admin/index.php">Dashboard</a>
-            <a href="logout.php">Logout</a>
-        <?php else: ?>
-            <a href="login.php">Login</a>
-        <?php endif; ?>
+        <a href="index.php">Home</a>
+        <a href="category.php">Category</a>
+        <a href="information.php">Information</a>
+        <a href="community.php">Community</a>
     </div>
 </div>
 
-</body>
-</html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header {
+        width: 100%;
+        background-color: #3E7B27;
+        padding: 15px 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Baris 1: Logo + Search */
+    .top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logowallacea {
+        background-image: url(assets/image/logo-putih.svg);
+        width: 70px;
+        height: 60px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .search-container {
+        position: relative;
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .logosearch {
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(assets/image/search.svg);
+        width: 18px;
+        height: 18px;
+        background-position: center;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    input {
+        width: 100%;
+        height: 42px;
+        background-color: white;
+        border-radius: 30px;
+        border: none;
+        padding-left: 48px;
+        font-size: 14px;
+        outline: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    input::placeholder {
+        color: #aaa;
+        font-weight: 300;
+    }
+
+    /* Baris 2: Menu */
+    .menu {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    .menu a:hover {
+        color: #ffd700;
+        text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 800px) {
+        .header {
+            padding: 15px 30px;
+        }
+        
+        .top-row {
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .search-container {
+            max-width: 100%;
+            width: 100%;
+        }
+        
+        .menu {
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 15px;
+        }
+    }
+</style>

@@ -20,6 +20,24 @@ $result = mysqli_query($conn, $query);
         padding: 20px;
     }
 
+    /* Tombol kembali ke dashboard */
+    .btn-back {
+        align-self: flex-start;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        background: #b9ff66;
+        color: black;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn-back:hover {
+        background: #a0e055;
+    }
+
     .card-data {
         background: white;
         border-radius: 10px;
@@ -29,6 +47,8 @@ $result = mysqli_query($conn, $query);
         display: flex;
         gap: 20px;
         align-items: center;
+        width: 100%;
+        max-width: 800px;
     }
 
     .card-data img {
@@ -84,10 +104,16 @@ $result = mysqli_query($conn, $query);
         padding: 50px;
         background: white;
         border-radius: 10px;
+        width: 100%;
+        max-width: 800px;
     }
 </style>
 
 <div class="hasil-cari">
+    <a href="admin/index.php?page=dashboard-utama" class="btn-back">
+        ← Kembali
+    </a>
+
     <h2>Hasil Pencarian: "<?php echo htmlspecialchars($keyword); ?>"</h2>
 
     <?php if (mysqli_num_rows($result) > 0): ?>
@@ -116,7 +142,6 @@ $result = mysqli_query($conn, $query);
     <?php else: ?>
         <div class="hasil-kosong">
             <p>Tidak ada data yang cocok dengan kata "<?php echo htmlspecialchars($keyword); ?>"</p>
-            <a href="admin/index.php?page=dashboard-utama">Kembali ke Dashboard</a>
         </div>
     <?php endif; ?>
 </div>

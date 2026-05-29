@@ -36,7 +36,7 @@ if (!in_array($page, $allowed)) {
     <div class="content">
 
         <?php
-        include 'pages/' . $page . '.php';
+        include __DIR__ . '/pages/' . $page . '.php';
         ?>
 
     </div>

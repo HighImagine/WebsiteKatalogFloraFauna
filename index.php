@@ -33,7 +33,7 @@
                 <br>
                 favoritmu !
             </h5>
-            <a href="register.html">
+            <a href="register.php">
                 <div class="sign_tombol_landing">Register</div>
             </a>
         </div>
