@@ -19,7 +19,11 @@ if (isset($_POST['submit'])) {
 
         echo '
         <body>
-
+        <style>
+            .swal2-confirm {
+                color: #222 !important;
+            }
+        </style>
         <script>
             Swal.fire({
                 icon: "error",
