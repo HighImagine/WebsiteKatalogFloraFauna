@@ -187,7 +187,7 @@ $data = mysqli_fetch_assoc($query);
 
         <div class="input-gambar">
 
-            <label>Ganti Gambar (Opsional)</label>
+            <label>Ganti Gambar</label>
 
             <div class="file-wrapper">
 

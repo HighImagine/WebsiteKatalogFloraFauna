@@ -17,8 +17,7 @@
     ?>
     <style>
         table {
-            width: 50%;
-            margin: 20px auto;
+            width: 100vh;
             border-collapse: collapse;
         }
 
@@ -47,7 +46,7 @@
         </a>
     </div>
 
-    <table border="1" cellpadding="10" cellspacing="0" style="margin:20px 290px; background:white;">
+    <table style="margin:20px 290px; background:white;">
         <tr>
             <th>Gambar</th>
             <th>Nama Umum</th>

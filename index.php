@@ -4,7 +4,7 @@
 <head>
     <?php
     $title = 'Homepage';
-    $css = 'css/homepage-before.css';
+    $css = 'css/homepage.css';
     include 'template/head.php'; ?>
 </head>
 
@@ -33,9 +33,9 @@
                 <br>
                 favoritmu !
             </h5>
-            <a href="register.php">
-                <div class="sign_tombol_landing">Register</div>
-            </a>
+            <div class="sign_tombol_landing">
+                <a href="register.php">Register</a>
+            </div>
         </div>
     </div>
     <div class="green_line_1"></div>

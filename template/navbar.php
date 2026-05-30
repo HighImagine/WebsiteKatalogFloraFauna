@@ -1,8 +1,5 @@
-<!-- template/navbar.php - Layout 2 baris sesuai Figma -->
-
 <div class="header">
-    <!-- Baris 1: Logo + Search -->
-    <div class="top-row">
+    <div class="baris-atas">
         <div class="logowallacea"></div>
         <div class="search-container">
             <div class="logosearch"></div>
@@ -13,12 +10,10 @@
         </div>
     </div>
 
-    <!-- Baris 2: Menu -->
     <div class="menu">
         <a href="index.php">Home</a>
-        <a href="category.php">Category</a>
-        <a href="information.php">Information</a>
-        <a href="community.php">Community</a>
+        <a href="category.php">Kategori</a>
+        <a href="information.php">Informasi</a>
     </div>
 </div>
 
@@ -31,14 +26,25 @@
 
     .header {
         width: 100%;
+        max-height: 100px;
         background-color: #3E7B27;
-        padding: 15px 80px;
+        padding: 10px 50px;
         display: flex;
         flex-direction: column;
+        position: fixed;
+        top: 0;
+        z-index: 2;
     }
 
-    /* Baris 1: Logo + Search */
-    .top-row {
+    .header.shrink {
+        padding: 5px 50px;
+    }
+
+    .header.shrink .menu a {
+        font-size: 14px;
+    }
+
+    .baris-atas {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -50,13 +56,23 @@
         width: 70px;
         height: 60px;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
     }
+
 
     .search-container {
         position: relative;
         flex: 1;
-        max-width: 500px;
+        max-width: 750px;
+    }
+
+    .search-container.shrink {
+        height: 24px;
+    }
+
+    .search-container.shrink .logosearch {
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .logosearch {
@@ -74,7 +90,7 @@
 
     input {
         width: 100%;
-        height: 42px;
+        height: 32px;
         background-color: white;
         border-radius: 30px;
         border: none;
@@ -89,7 +105,16 @@
         font-weight: 300;
     }
 
-    /* Baris 2: Menu */
+    .header.shrink input {
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .header.shrink .logosearch {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
     .menu {
         display: flex;
         justify-content: center;
@@ -106,8 +131,13 @@
     }
 
     .menu a:hover {
-        color: #ffd700;
+        color: #d0ff95;
         text-decoration: none;
+    }
+
+    .header.shrink .profile {
+        width: 38px;
+        height: 38px;
     }
 
     /* Responsive */
@@ -115,17 +145,17 @@
         .header {
             padding: 15px 30px;
         }
-        
-        .top-row {
+
+        .baris-atas {
             flex-direction: column;
             gap: 15px;
         }
-        
+
         .search-container {
             max-width: 100%;
             width: 100%;
         }
-        
+
         .menu {
             flex-wrap: wrap;
             gap: 25px;
@@ -133,3 +163,26 @@
         }
     }
 </style>
+<script>
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('.header');
+        const logowallacea = document.querySelector('.logowallacea');
+        // const searchContainer = document.querySelector('.search-container');
+        const menuLinks = document.querySelectorAll('.menu a');
+        const profile = document.querySelector('.profile');
+
+        if (window.scrollY > 50) {
+            header.classList.add('shrink');
+            logowallacea.classList.add('shrink');
+            // searchContainer.classList.add('shrink');
+            menuLinks.forEach(link => link.classList.add('shrink'));
+            profile.classList.add('shrink');
+        } else {
+            header.classList.remove('shrink');
+            logowallacea.classList.remove('shrink');
+            // searchContainer.classList.remove('shrink');
+            menuLinks.forEach(link => link.classList.remove('shrink'));
+            profile.classList.remove('shrink');
+        }
+    });
+</script>

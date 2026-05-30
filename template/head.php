@@ -15,7 +15,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Poppins:wght@400;500;600;700&family=Roboto:wght@100..900&display=swap"
         rel="stylesheet">
