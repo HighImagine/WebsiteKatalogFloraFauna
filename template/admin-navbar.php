@@ -158,7 +158,7 @@
                         <?= $_SESSION['username']; ?>
                     </div>
 
-                    <a href="profil.php">Profil</a>
+                    <a href="pages/profil.php">Profil</a>
                     <a href="index.php">Homepage</a>
                     <a href="logout.php">Logout</a>
                 </div>

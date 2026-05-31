@@ -13,24 +13,20 @@ if (isset($_POST['login'])) {
     $data = $result->fetch_assoc();
 
     if ($data) {
-        // cek password
         if (password_verify($password, $data['password'])) {
-            // Password benar, set session
             $_SESSION['username'] = $data['username'];
             $_SESSION['level'] = $data['level'];
+            $_SESSION['id'] = $data['id'];
 
-            
-            if ($data['level'] == 'admin') {
-                header("Location: index.php");
-            } else if ($data['level'] == 'user') {
-                header("Location: index.php");
-            }
+            header("Location: index.php");
             exit();
         } else {
-            echo "Password salah.";
+            header("Location: login.php?error=password");
+            exit();
         }
     } else {
-        echo "Username tidak ditemukan.";
+        header("Location: login.php?error=username");
+        exit();
     }
 }
 ?>

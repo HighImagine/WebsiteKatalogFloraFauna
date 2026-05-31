@@ -1,8 +1,24 @@
 <?php
+include 'koneksi.php';
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+
+
+$navUser = null;
+
+if (isset($_SESSION['id'])) {
+    $id = $_SESSION['id'];
+
+    $stmtNav = $conn->prepare("SELECT foto, username, level FROM users WHERE id = ?");
+    $stmtNav->bind_param("i", $id);
+    $stmtNav->execute();
+
+    $navUser = $stmtNav->get_result()->fetch_assoc();
+}
 ?>
+
 
 
 <!DOCTYPE html>
@@ -131,11 +147,26 @@ if (session_status() == PHP_SESSION_NONE) {
             position: relative;
         }
 
-        .profile {
+        .profile-btn {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            padding: 0;
+            border: none;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .navbar-profile-img {
             width: 42px;
             height: 42px;
             border-radius: 50%;
             object-fit: cover;
+            object-position: center;
+            display: block;
             cursor: pointer;
         }
 
@@ -272,7 +303,8 @@ if (session_status() == PHP_SESSION_NONE) {
             <?php if (isset($_SESSION['username'])): ?>
 
                 <div class="profile-menu">
-                    <img src="assets/image/default-profile.png" class="profile" id="profileBtn">
+                    <img src="uploads/pfp/<?= htmlspecialchars($navUser['foto']); ?>" class="navbar-profile-img"
+                        id="profileBtn">
 
                     <div class="dropdown" id="dropdownMenu">
                         <div class="dropdown-user">
