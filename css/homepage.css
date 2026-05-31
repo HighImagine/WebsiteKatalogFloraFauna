@@ -12,15 +12,20 @@
     background-size: cover;
     border: none;
     position: relative;
-    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .kotak_landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #e8ffc7;
     width: 950px;
     height: 380px;
     border-radius: 15px;
-    margin: auto;
     display: block;
     overflow: hidden;
 }
@@ -74,41 +79,33 @@
     color: white;
 }
 
-.signin_landing {
+.CTA-register {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     margin-top: 75px;
     gap: 25px;
-    width: auto;
     font-size: 20px;
-    line-height: 25px;
     text-decoration: none;
 }
 
-.sign_tombol_landing {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+.CTA-register a {
     background-color: #B9FF66;
-    text-align: center;
     height: 40px;
     width: 200px;
-    border-radius: 10px;
+    border-radius: 15px;
     gap: 15px;
     padding: 5px;
-    transition: transform 0.5s ease-in-out;
     cursor: pointer;
 }
-.sign_tombol_landing a {
-    color: black;
-    text-decoration: none;
+.CTA-register a:hover {
+    color: #292929;
+    background-color: #e8ffc7;
+    border: none;
 }
-.sign_tombol_landing:hover {
-    transform: translateY(-5px);
-}
-
 .green_line_1 {
     width: 100%;
     height: 15px;
@@ -381,7 +378,6 @@ cite {
 .pembentuk_flora_6:hover,
 .pembentuk_flora_7:hover {
     transform: translateY(-20px);
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 .pembentuk_flora_1 p,
@@ -391,7 +387,7 @@ cite {
 .pembentuk_flora_5 p,
 .pembentuk_flora_6 p,
 .pembentuk_flora_7 p {
-    background-color: #B9FF66;
+    background-color: #d0ff95;
     padding-top: 8px;
     width: 100%;
     height: 40px;
@@ -443,28 +439,6 @@ cite {
     border-radius: 30px;
     margin: 50px auto 80px auto;
 }
-
-.tombol_klik_Disini_flora {
-    display: block;
-    background-color: #B9FF66;
-    color: #000000;
-    border-radius: 8px;
-    padding-top: 10px;
-    width: 240px;
-    height: 50px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    margin: 30px auto;
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-.tombol_klik_Disini_flora:hover {
-    transform: translateY(-15px);
-}
-
 .fauna_line {
     display: flex;
 }
@@ -551,7 +525,7 @@ cite {
 .pembentuk_fauna_5 p,
 .pembentuk_fauna_6 p,
 .pembentuk_fauna_7 p {
-    background-color: #B9FF66;
+    background-color: #d0ff95;
     padding-top: 8px;
     width: 100%;
     height: 40px;

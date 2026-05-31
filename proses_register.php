@@ -15,33 +15,8 @@ if (isset($_POST['submit'])) {
 
     // kalau username sudah ada
     if ($result->num_rows > 0) {
-        include 'template/head.php';
 
-        echo '
-        <body>
-        <style>
-            .swal2-confirm {
-                color: #222 !important;
-            }
-        </style>
-        <script>
-            Swal.fire({
-                icon: "error",
-                title: "Username Sudah Terdaftar",
-                text: "Silakan gunakan username lain.",
-                confirmButtonText: "Kembali",
-                color: "#222",
-                confirmButtonColor: "#b9ff66",
-                background: "#fef9f2"
-            }).then(() => {
-                window.history.back();
-            });
-        </script>
-
-        </body>
-        </html>
-';
-
+        header("Location: register.php?error=username");
         exit;
 
     } else {
@@ -73,5 +48,6 @@ if (isset($_POST['submit'])) {
 
         }
     }
+
 }
 ?>

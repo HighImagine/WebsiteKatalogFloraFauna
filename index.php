@@ -28,20 +28,24 @@
                 <p class="baca_sekarang">Baca Sekarang</p>
             </div>
         </div>
-        <div class="signin_landing">
-            <h5>Sign in untuk menyimpan Flora Fauna
-                <br>
-                favoritmu !
-            </h5>
-            <div class="sign_tombol_landing">
-                <a href="register.php">Register</a>
+        <?php if (!isset($_SESSION['username'])): ?>
+
+            <div class="CTA-register">
+                <p>
+                    Sign in untuk menyimpan Flora Fauna favoritmu!
+                </p>
+
+                <a href="register.php" class="register-btn">
+                    Register
+                </a>
             </div>
-        </div>
+
+        <?php endif; ?>
     </div>
     <div class="green_line_1"></div>
 
     <div class="recomendation">
-        <div class="kotak_rekomendasi">Recomendation</div>
+        <div class="kotak_rekomendasi">Rekomendasi</div>
         <div class="kotak_isi_rekomendasi">
 
             <div class="teks_rekomendasi">
@@ -205,13 +209,19 @@
 
         </div>
 
-        <div class="kotak_klik_Disini_flora">
-            <p>Ingin informasi Flora lain yang lebih<br>
-                lengkap? klik tombol di bawah ini!</p>
-            <a href="Register.html">
-                <div class="tombol_klik_Disini_flora">Klik Disini</div>
-            </a>
-        </div>
+        <?php if (!isset($_SESSION['username'])): ?>
+
+            <div class="CTA-register">
+                <p>
+                    Buat akun untuk membuat koleksi flora favoritmu!
+                </p>
+
+                <a href="register.php" class="register-btn">
+                    Register
+                </a>
+            </div>
+
+        <?php endif; ?>
 
     </div>
 
@@ -254,13 +264,19 @@
 
         </div>
 
-        <div class="kotak_klik_Disini_fauna">
-            <p>Ingin informasi Fauna lain yang lebih<br>
-                lengkap? klik tombol di bawah ini!</p>
-            <a href="Register.html">
-                <div class="tombol_klik_Disini_fauna">Klik Disini</div>
-            </a>
-        </div>
+        <?php if (!isset($_SESSION['username'])): ?>
+
+            <div class="CTA-register">
+                <p>
+                    Buat akun untuk membuat koleksi fauna favoritmu!
+                </p>
+
+                <a href="register.php" class="register-btn">
+                    Register
+                </a>
+            </div>
+
+        <?php endif; ?>
 
     </div>
 

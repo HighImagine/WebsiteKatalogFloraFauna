@@ -81,8 +81,7 @@
     padding-right: 10px;
 }
 
-.menu-atas,
-.menu-bawah {
+.menu-atas {
     padding-left: 20px;
     align-items: center;
 }
@@ -93,20 +92,17 @@
     margin: 0;
 }
 
-.menu-atas ul,
-.menu-bawah ul {
+.menu-atas ul {
     list-style: none;
     text-align: left;
 
 }
 
-.menu-atas ul li,
-.menu-bawah ul li {
+.menu-atas ul li {
     margin: 20px 0;
 }
 
-.menu-atas li a,
-.menu-bawah li a {
+.menu-atas li a {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -114,8 +110,7 @@
     align-items: center;
 }
 
-.menu-atas li img,
-.menu-bawah li img {
+.menu-atas li img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -124,8 +119,7 @@
 .menu1,
 .menu2,
 .menu3,
-.menu4,
-.menu5 {
+.menu4 {
     display: flex;
     gap: 20px;
     cursor: pointer;
