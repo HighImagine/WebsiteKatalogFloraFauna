@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.kategori-page {
+    min-height: 100vh;
+    padding: 90px 40px 60px;
+    text-align: center;
+}
+
+.kategori-page h1 {
+    color: #1f7a2e;
+    font-size: 26px;
+    margin: 45px;
+}
+
+.kategori-grid {
+    max-width: 780px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 120px);
+    gap: 28px;
+}
+.kategori-grid img {
+    width: 165px;
+    height: 165px;
+}
+
+.kategori-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    transition: .2s;
+}
+
+.kategori-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.kategori-card h3 {
+    color: #3E7B27;
+    padding: 12px;
+    margin: 0;
+    font-size: 16px;
+}

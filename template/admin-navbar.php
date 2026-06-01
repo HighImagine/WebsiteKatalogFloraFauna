@@ -1,3 +1,15 @@
+<?php
+if (isset($_SESSION['id'])) {
+    $id = $_SESSION['id'];
+
+    $stmtNav = $conn->prepare("SELECT foto, username, level FROM users WHERE id = ?");
+    $stmtNav->bind_param("i", $id);
+    $stmtNav->execute();
+
+    $navUser = $stmtNav->get_result()->fetch_assoc();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,75 +64,55 @@
             gap: 5px;
         }
 
-        .admin-profile-menu {
+        .profile-menu {
             position: relative;
         }
 
-        .admin-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .navbar-profile-img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
             cursor: pointer;
-            padding: 4px 8px;
-            border-radius: 12px;
-            transition: 0.2s;
-        }
-
-        .admin-container:hover {
-            background: #eeeeee;
-        }
-
-        .admin-info {
-            display: flex;
-            flex-direction: column;
-            line-height: 1.2;
-        }
-
-        .admin-name {
-            font-size: 14px;
-            font-weight: 600;
-            color: #222;
-        }
-
-        .admin-role {
-            font-size: 12px;
-            color: #777;
         }
 
         .admin-dropdown {
             position: absolute;
             top: 55px;
             right: 0;
-            width: 180px;
+            width: 190px;
             background: white;
-            border-radius: 12px;
+            border-radius: 14px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
             overflow: hidden;
             display: none;
-            z-index: 999;
+            z-index: 9999;
         }
 
         .admin-dropdown.show {
             display: block;
         }
 
-        .admin-dropdown .dropdown-user {
-            padding: 15px;
-            background: #f5f5f5;
-            font-weight: 600;
+        .dropdown-admin {
+            padding: 18px 16px;
+            font-weight: 700;
             color: #222;
+            background: white;
+            border-bottom: 1px solid #f0f0f0;
         }
 
         .admin-dropdown a {
             display: block;
-            padding: 12px 15px;
-            color: #222;
+            padding: 14px 16px;
+            color: #333;
             text-decoration: none;
-            transition: 0.2s;
+            font-size: 15px;
         }
 
         .admin-dropdown a:hover {
-            background: #f0f0f0;
+            background: #f5f5f5;
         }
     </style>
 </head>
@@ -138,24 +130,19 @@
                     </button>
                 </form>
             </div>
-            <div class="admin-profile-menu">
-                <div class="admin-container" id="adminProfileBtn">
-                    <img class="profile-admin" src="assets/image/default-profile.png">
 
-                    <div class="admin-info">
-                        <h4 class="admin-name">
-                            <?= $_SESSION['username']; ?>
-                        </h4>
+            <?php
+            $foto = !empty($navUser['foto'])
+                ? $navUser['foto']
+                : 'assets/image/default-profile.png';
+            ?>
 
-                        <p class="admin-role">
-                            <?= ucfirst($_SESSION['level']); ?>
-                        </p>
-                    </div>
-                </div>
+            <div class="profile-menu">
+                <img src="uploads/pfp/<?= htmlspecialchars($foto); ?>" class="navbar-profile-img" id="profileBtn">
 
                 <div class="admin-dropdown" id="adminDropdownMenu">
-                    <div class="dropdown-user">
-                        <?= $_SESSION['username']; ?>
+                    <div class="dropdown-admin">
+                        <?= htmlspecialchars($navUser['username']); ?>
                     </div>
 
                     <a href="pages/profil.php">Profil</a>
@@ -165,23 +152,25 @@
             </div>
 
         </div>
+
+    </div>
     </div>
 </body>
 <script>
-    const adminProfileBtn = document.getElementById('adminProfileBtn');
-    const adminDropdownMenu = document.getElementById('adminDropdownMenu');
+    const profileBtn = document.getElementById('profileBtn');
+    const dropdownMenu = document.getElementById('adminDropdownMenu');
 
-    if (adminProfileBtn && adminDropdownMenu) {
-        adminProfileBtn.addEventListener('click', function (e) {
+    if (profileBtn && dropdownMenu) {
+        profileBtn.addEventListener('click', function (e) {
             e.stopPropagation();
-            adminDropdownMenu.classList.toggle('show');
+            dropdownMenu.classList.toggle('show');
         });
 
         document.addEventListener('click', function () {
-            adminDropdownMenu.classList.remove('show');
+            dropdownMenu.classList.remove('show');
         });
 
-        adminDropdownMenu.addEventListener('click', function (e) {
+        dropdownMenu.addEventListener('click', function (e) {
             e.stopPropagation();
         });
     }

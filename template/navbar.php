@@ -1,5 +1,5 @@
 <?php
-include 'koneksi.php';
+include __DIR__ . '/../koneksi.php';
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -65,6 +65,7 @@ if (isset($_SESSION['id'])) {
             height: 60px;
             background-position: center;
             background-size: contain;
+            cursor: pointer;
         }
 
 
@@ -180,7 +181,6 @@ if (isset($_SESSION['id'])) {
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
             overflow: hidden;
             display: none;
-
             opacity: 0;
             visibility: hidden;
             transform: translateY(-10px);
@@ -196,7 +196,7 @@ if (isset($_SESSION['id'])) {
         .dropdown-user {
             padding: 15px;
             background: #f5f5f5;
-            font-weight: 600;
+            font-weight: 700;
             color: #222;
         }
 
@@ -295,12 +295,18 @@ if (isset($_SESSION['id'])) {
 <body>
     <div class="header">
         <div class="baris-atas">
-            <div class="logowallacea"></div>
+            <a href="index.php" class="logowallacea"></a>
             <div class="search-container">
                 <div class="logosearch"></div>
                 <input type="text" placeholder="Cari Disini...">
             </div>
             <?php if (isset($_SESSION['username'])): ?>
+
+                <?php
+                $foto = !empty($navUser['foto'])
+                    ? $navUser['foto']
+                    : 'assets/image/default-profile.png';
+                ?>
 
                 <div class="profile-menu">
                     <img src="uploads/pfp/<?= htmlspecialchars($navUser['foto']); ?>" class="navbar-profile-img"
@@ -328,14 +334,15 @@ if (isset($_SESSION['id'])) {
                     <a href="register.php" class="register-btn">
                         Register
                     </a>
-                </div>
+                </div>  
             <?php endif; ?>
         </div>
 
         <div class="menu">
             <a href="index.php">Home</a>
-            <a href="category.php">Kategori</a>
+            <a href="kategori.php">Kategori</a>
             <a href="information.php">Informasi</a>
+            <a href="pages/favorit.php">Favorit</a>
         </div>
     </div>
     <script>
