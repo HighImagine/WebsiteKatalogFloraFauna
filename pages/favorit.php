@@ -1,120 +1,67 @@
+<?php
+include "../cek.php";
+include "../koneksi.php";
+
+$user_id = $_SESSION['id'];
+
+$title = "Favorit";
+$css = "css/favorit.css";
+
+$stmt = $conn->prepare("
+    SELECT spesies.*
+    FROM favorit
+    JOIN spesies ON favorit.spesies_id = spesies.id
+    WHERE favorit.user_id = ?
+    ORDER BY favorit.created_at DESC
+");
+
+$stmt->bind_param("i", $user_id);
+$stmt->execute();
+
+$result = $stmt->get_result();
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
-<?php
-$css = "css/favorit.css";
-$title = "Favorit";
-include '../template/head.php'
-?>
+    <?php include "../template/head.php"; ?>
 </head>
 
 <body>
-    <div class="header">
-        <div class="header-kanan">
-            <img class="profile-admin" src="assets/image/profile-dummy2.svg" style="width: 50px;">
-            <div class="admin-info">
-                <h4 class="admin-name">Saddam Husein</h4>
-                <p class="admin-email">saddamhusein@example.com</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="sidebar">
-        <img class="logo" src="assets/image/logo-hitam.svg">
-        <div class="sidebar-menu">
-            <div class="menu-atas">
-                <ul>
-                    <li class="menu1"><img src="assets/image/icon-home.svg"><a
-                            href="dashboard-utama.html">Dashboard</a></li>
-                    <li class="menu2"><img src="assets/image/icon-mylist.svg"><a href="mylist.html">My
-                            List</a></li>
-                    <li class="menu3"><img src="assets/image/icon-comment.svg"><a
-                            href="activity-comment.html">Activity</a></li>
-                </ul>
-            </div>
+    <?php include "../template/navbar.php"; ?>
 
-            <div class="menu-bawah" style="margin: 290px 0px 0px 0px;">
-                <ul>
-                    <li class="menu5"><img src="assets/image/icon-logout.svg"><a href="#">Logout</a></li>
-                </ul>
-            </div>
+    <main class="favorit-page">
+        <div class="favorit-header">
+            <h1>Favorit Saya</h1>
+            <p>Lihat semua spesies yang pernah kamu tambahkan ke favorit.</p>
         </div>
-    </div>
-    <div class="content">
-        <main>
-            <div class="mylist-text">
-                <div class="mylist-title">
-                    <img src="assets/image/icon-mylist.svg">
-                    <h2>My List</h2>
+
+        <div class="favorit-grid">
+            <?php while ($row = $result->fetch_assoc()): ?>
+                <div class="favorit-card">
+
+                    <a href="../action/hapus-favorit.php?id=<?= $row['id']; ?>" class="hapus-favorit"
+                        onclick="return confirm('Hapus dari favorit?')">
+                        ♥
+                    </a>
+
+                    <a href="detail.php?id=<?= $row['id']; ?>" class="favorit-link">
+                        <img src="uploads/spesies/<?= htmlspecialchars($row['gambar']); ?>"
+                            alt="<?= htmlspecialchars($row['nama_umum']); ?>">
+
+                        <h3><?= htmlspecialchars($row['nama_umum']); ?></h3>
+                        <p>(<?= htmlspecialchars($row['nama_ilmiah']); ?>)</p>
+                    </a>
+
                 </div>
-                <div class="mylist-desc">
-                    <p style="font-weight: 500">My List</p>
-                    <p>Edit Semua List Flora Fauna yang pernah anda tambahkan!</p>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="card1-container">
-                    <div class="image1-container">
-                        <div class="edit-container">
-                            <div class="edit-button">
-                                <button><img src="assets/image/icon-edit.svg"></button>
-                            </div>
-                        </div>
-                        <img class="card1-img" src="assets/image/wishlist-komodo.svg">
-                    </div>
-                    <div class="card1-text">
-                        <p>VARANUS KOMODOENSIS
-                        (Komodo)
-                        </p>
-                    </div>    
-                </div>
-                <div class="card2-container">
-                    <div class="image2-container">
-                        <div class="edit-container">
-                            <div class="edit-button">
-                                <button><img src="assets/image/icon-edit.svg"></button>
-                            </div>
-                        </div>
-                        <img class="card2-img" src="assets/image/wishlist-burung.png">
-                    </div>
-                    <div class="card2-text">
-                        <p>ACEROS CASSIDIX
-                        (Rangkok Sulawesi)
-                        </p>
-                    </div>    
-                </div>
-                <div class="card3-container">
-                    <div class="image3-container">
-                        <div class="edit-container">
-                            <div class="edit-button">
-                                <button><img src="assets/image/icon-edit.svg"></button>
-                            </div>
-                        </div>
-                        <img class="card3-img" src="assets/image/wishlist-bunga.png">
-                    </div>
-                    <div class="card3-text">
-                        <p>PTEROCARPUS INDICUS
-                        (Angsana)
-                        </p>
-                    </div>    
-                </div>
-                <div class="card4-container">
-                    <div class="image4-container">
-                        <div class="edit-container">
-                            <div class="edit-button">
-                                <button><img src="assets/image/icon-edit.svg"></button>
-                            </div>
-                        </div>
-                        <img class="card4-img" src="assets/image/wishlist-anoa.png">
-                    </div>
-                    <div class="card4-text">
-                        <p>ANOA DEPRESSICORNIS
-                        (Anoa Dataran Rendah)
-                        </p>
-                    </div>    
-                </div>
-            </div>
-            
-        </main>
-    </div>
+            <?php endwhile; ?>
+        </div>
+    </main>
+
+    <?php include "../template/footer.php"; ?>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    background: #fff;
+}
+
+.detail-page {
+    min-height: 100vh;
+    padding: 120px 70px 70px;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 35px;
+    padding: 12px 22px;
+    border: 1.5px solid #3E7B27;
+    border-radius: 12px;
+    color: #3E7B27;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.back-button:hover {
+    background: #3E7B27;
+    color: white;
+}
+
+.detail-container {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.detail-image {
+    width: 360px;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.14);
+}
+
+.detail-content {
+    padding-top: 5px;
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: flex-start;
+    margin-bottom: 28px;
+}
+
+.detail-header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.detail-header h2 {
+    margin: 8px 0 0;
+    font-size: 26px;
+    color: #3E7B27;
+}
+
+.favorite-button {
+    padding: 13px 22px;
+    border: 1.5px solid #3E7B27;
+    border-radius: 12px;
+    background: white;
+    color: #3E7B27;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.favorite-button:hover {
+    background: #3E7B27;
+    color: white;
+}
+.favorite-button.active {
+    background: #3E7B27;
+    color: white;
+}
+.favorite-button.active:hover {
+    background: white;
+    color: #3E7B27;
+}
+.detail-info {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 28px;
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    padding: 16px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-row span {
+    color: #3E7B27;
+    font-weight: 700;
+}
+
+.info-row p {
+    margin: 0;
+    color: #222;
+}
+
+.detail-desc p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #222;
+    text-align: justify;
+}
+
+@media (max-width: 900px) {
+    .detail-page {
+        padding: 100px 25px 50px;
+    }
+
+    .detail-container {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-image {
+        width: 100%;
+        height: 380px;
+    }
+
+    .detail-header {
+        flex-direction: column;
+    }
+}

@@ -15,18 +15,6 @@
         "SELECT * FROM spesies WHERE jenis='flora' ORDER BY id DESC"
     );
     ?>
-    <style>
-        table {
-            width: 100vh;
-            border-collapse: collapse;
-        }
-
-        td,
-        th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-    </style>
 </head>
 
 <body>
@@ -71,14 +59,14 @@
                 <td><?= $row['kategori']; ?></td>
 
                 <td>
-                    <a href="admin/index.php?page=edit&id=<?= $row['id']; ?>">
+                    <a class="btn-edit" href="admin/index.php?page=edit&id=<?= $row['id']; ?>">
                         Edit
                     </a>
 
-                    -
+                    
 
-                    <a href="admin/action/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin hapus data?')"
-                        &from=dashboard-flora">
+                    <a class="btn-hapus" href="admin/action/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin hapus data?')"
+                        &from=dashboard-flora>
                         Hapus
                     </a>
                 </td>

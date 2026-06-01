@@ -16,21 +16,6 @@
         "SELECT * FROM spesies WHERE jenis='fauna' ORDER BY id DESC"
     );
     ?>
-    <style>
-        table {
-            width: 50%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-
-        td,
-        th {
-            width: auto;
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -48,7 +33,7 @@
             Tambah Fauna
         </a>
     </div>
-    <table border="1" cellpadding="10" cellspacing="0" style="margin:20px 290px; background:white;">
+    <table style="margin:20px 290px; background:white;">
         <tr>
             <th>Gambar</th>
             <th>Nama Umum</th>
@@ -73,14 +58,14 @@
                 <td><?= $row['kategori']; ?></td>
 
                 <td>
-                    <a href="admin/index.php?page=edit&id=<?= $row['id']; ?>">
+                    <a class="btn-edit" href="admin/index.php?page=edit&id=<?= $row['id']; ?>">
                         Edit
                     </a>
 
-                    -
 
-                    <a href="admin/action/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin hapus data?')"
-                        &from=dashboard-fauna">
+
+                    <a class="btn-hapus" href="admin/action/hapus.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin hapus data?')"
+                        &from=dashboard-fauna>
                         Hapus
                     </a>
                 </td>

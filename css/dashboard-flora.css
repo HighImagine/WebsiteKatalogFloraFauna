@@ -168,6 +168,64 @@
     font-weight: 500;
 }
 
+.btn-edit {
+    background: #4CAF50;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-hapus {
+    background: #ff4d4d;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+table {
+    width: 71%;
+    margin: 20px auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+th {
+    padding: 18px;
+    text-align: center;
+    background: #3e7b27;
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    padding: 18px;
+    vertical-align: middle;
+}
+
+th:not(:last-child),
+td:not(:last-child) {
+    border-right: 1px solid #f0f0f0;
+}
+
+tr:hover {
+    background: #fafafa;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+td:last-child a {
+    margin: 0 5px;
+}
+
 @media (max-width: 800px) {
     .sidebar {
         transform: translateX(-100%);

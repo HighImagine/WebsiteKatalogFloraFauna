@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: 'Poppins';
+}
+
+.user-page {
+    padding: 50px 50px;
+}
+
+.user-header {
+    margin-bottom: 25px;
+}
+
+.user-header h1 {
+    color: #3E7B27;
+    margin-bottom: 5px;
+}
+
+.user-header p {
+    color: #666;
+}
+
+.user-table {
+    width: 80%;
+    
+    border-collapse: collapse;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.user-table th,
+.user-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.user-table th {
+    background: #3E7B27;
+    color: white;
+}
+
+.user-table tr:hover {
+    background: #f8fff5;
+}
+
+.user-photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.role-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    background: #e7f5df;
+    color: #3E7B27;
+}
+
+.empty {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}

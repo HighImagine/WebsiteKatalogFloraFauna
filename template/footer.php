@@ -1,47 +1,64 @@
-<html>
-<div class="About_background">
-    <div class="logoAndteks">
-        <div class="logohitam"></div>
-        <div class="tekslogo">Eksplorasi Alam Wallacea</div>
-    </div>
-    <div class="pengatur_about">
-        <div class="teks_about">
-            <p>About Us<br>
-                Information<br>
-                Privacy & Policy<br>
-                Menu
-            </p>
-        </div>
-        <div class="teks_about">
-            <p>About Us<br>
-                Information<br>
-                Privacy & Policy<br>
-                Menu
-            </p>
-        </div>
-        <div class="teks_about">
-            <p>About Us<br>
-                Information<br>
-                Privacy & Policy<br>
-                Menu
-            </p>
-        </div>
-    </div>
-    <div class="about_line"></div>
-    <div class="pengatur_logo_di_About">
-        <div class="Contact_us">Contact us</div>
-        <div class="pembentuk_logo_1 Instagram"></div>
-        <div class="pembentuk_logo_2 Facebook"></div>
-        <div class="pembentuk_logo_3 Twitter"></div>
-        <div class="pembentuk_logo_4 Youtube"></div>
-        <div class="pembentuk_logo_5 Tiktok"></div>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
 
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Poppins:wght@400;500;600;700&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
 
-<div class="logoAndteks_Copyright">
-    <div class="logoCopyright"></div>
-    <div class="teksCopyright">Copyright. All Right Reserved.</div>
-</div>
+<body>
+    <footer class="footer">
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <img src="assets/image/logo-hitam.svg" alt="Wallacea">
+                <h4>Wallacea</h4>
+                <p>Eksplorasi Alam Wallacea</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Tentang Kami</a>
+                <a href="information.php">Informasi</a>
+                <a href="#">Privasi & Kebijakan</a>
+                <a href="kategori.php">Menu</a>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Ketentuan</a>
+                <a href="#">Syarat & Ketentuan</a>
+                <a href="index.php">Home</a>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Email</a>
+                <a href="#">Dukung Kami</a>
+            </div>
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="footer-social">
+            <a href="#" class="contact-btn">Kontak Kami</a>
+
+            <a href="#"><img src="assets/image/instagram.png"></a>
+            <a href="#"><img src="assets/image/facebook.png"></a>
+            <a href="#"><img src="assets/image/x.png"></a>
+            <a href="#"><img src="assets/image/youtube.png"></a>
+            <a href="#"><img src="assets/image/tiktok.png"></a>
+        </div>
+
+        <div class="footer-copy">
+            © Copyright. All Right Reserved.
+        </div>
+    </footer>
+</body>
 
 </html>
