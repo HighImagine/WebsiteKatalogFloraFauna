@@ -75,7 +75,7 @@ if (isset($_SESSION['id'])) {
 
                         <?php if ($isFavorit): ?>
 
-                            <a href="action/hapus-favorit.php?id=<?= $data['id']; ?>" class="favorite-button active">
+                            <a href="action/hapus-favorit.php?id=<?= $data['id'];?>&from=detail" class="favorite-button active">
                                 ♥ Favorit
                             </a>
 

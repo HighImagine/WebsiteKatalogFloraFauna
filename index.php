@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +14,24 @@
 
 <body>
     <?php include 'template/navbar.php'; ?>
+    <?php if (isset($_GET['popup']) && $_GET['popup'] == 'login'): ?>
+        <div class="popup-overlay">
+            <div class="popup">
+                <h2>Login Diperlukan</h2>
+                <p>Silakan login atau register terlebih dahulu untuk mengakses fitur favorit.</p>
+
+                <div class="popup-actions">
+                    <a href="login.php" class="btn-login">
+                        Login
+                    </a>
+
+                    <a href="register.php" class="btn-register">
+                        Register
+                    </a>
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
     <div class="landing">
         <div class="kotak_landing">
             <div class="gambar_kotak_landing"></div>

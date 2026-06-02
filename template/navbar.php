@@ -70,14 +70,18 @@ if (isset($_SESSION['id'])) {
                     <a href="register.php" class="register-btn">
                         Register
                     </a>
-                </div>  
+                </div>
             <?php endif; ?>
         </div>
 
         <div class="menu">
             <a href="kategori.php">Kategori</a>
             <a href="information.php">Informasi</a>
-            <a href="pages/favorit.php">Favorit</a>
+            <?php if (isset($_SESSION['id'])): ?>
+                <a href="pages/favorit.php">Favorit</a>
+            <?php else: ?>
+                <a href="index.php?popup=login">Favorit</a>
+            <?php endif; ?>
         </div>
     </div>
     <script>

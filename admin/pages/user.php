@@ -27,7 +27,7 @@ $result = $conn->query($sql);
 
 <div class="user-page" style="margin: 0 0 0 290px">
     <div class="user-header">
-        <h1>Data User</h1>
+        <h2>Data User</h2>
         <p>Daftar semua akun yang sudah terdaftar di website Wallacea.</p>
     </div>
 

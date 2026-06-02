@@ -1,5 +1,12 @@
 <?php
-include "../cek.php";
+session_start();
+
+$belumLogin = !isset($_SESSION['id']);
+
+if (!$belumLogin) {
+    include "../koneksi.php";
+}
+
 include "../koneksi.php";
 
 $user_id = $_SESSION['id'];
@@ -29,7 +36,6 @@ $result = $stmt->get_result();
 </head>
 
 <body>
-
     <?php include "../template/navbar.php"; ?>
 
     <main class="favorit-page">
@@ -42,14 +48,14 @@ $result = $stmt->get_result();
             <?php while ($row = $result->fetch_assoc()): ?>
                 <div class="favorit-card">
 
-                    <a href="../action/hapus-favorit.php?id=<?= $row['id']; ?>" class="hapus-favorit"
+                    <a href="action/hapus-favorit.php?id=<?= $row['id']; ?>&from=favorit" class="hapus-favorit"
                         onclick="return confirm('Hapus dari favorit?')">
                         ♥
                     </a>
 
                     <a href="detail.php?id=<?= $row['id']; ?>" class="favorit-link">
-                        <img src="uploads/spesies/<?= htmlspecialchars($row['gambar']); ?>"
-                            alt="<?= htmlspecialchars($row['nama_umum']); ?>">
+                        <img src="uploads/spesies/<?= htmlspecialchars($row['gambar']); ?>">
+
 
                         <h3><?= htmlspecialchars($row['nama_umum']); ?></h3>
                         <p>(<?= htmlspecialchars($row['nama_ilmiah']); ?>)</p>

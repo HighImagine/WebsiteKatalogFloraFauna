@@ -70,6 +70,7 @@
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
+
 .container_baca_sekarang a {
     color: white;
     text-decoration: none;
@@ -101,11 +102,13 @@
     padding: 5px;
     cursor: pointer;
 }
+
 .CTA-register a:hover {
     color: #292929;
     background-color: #e8ffc7;
     border: none;
 }
+
 .green_line_1 {
     width: 100%;
     height: 15px;
@@ -439,6 +442,7 @@ cite {
     border-radius: 30px;
     margin: 50px auto 80px auto;
 }
+
 .fauna_line {
     display: flex;
 }
@@ -603,4 +607,68 @@ cite {
     width: 100%;
     height: 15px;
     background-color: #7EB142;
+}
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.popup {
+    width: 400px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+
+.popup h2 {
+    color: #3E7B27;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.popup-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn-login,
+.btn-register {
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.btn-login {
+    background: #3E7B27;
+    color: white;
+}
+
+.btn-login:hover {
+    opacity: .9;
+}
+
+.btn-register {
+    border: 2px solid #3E7B27;
+    color: #3E7B27;
+}
+
+.btn-register:hover {
+    background: #3E7B27;
+    color: white;
 }
