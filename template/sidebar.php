@@ -10,6 +10,8 @@
         <div class="sidebar-menu">
             <div class="menu-atas">
                 <ul>
+                    <li class="menu1"><img src="assets/image/account.png"><a href="pages/profil.php">Profil Saya</a>
+                    </li>
                     <li class="menu1"><img src="assets/image/icon-home.svg"><a
                             href="admin/pages/dashboard-utama.php">Dashboard</a></li>
                     <li class="menu2"><img src="assets/image/icon-flora.svg"><a
@@ -18,6 +20,12 @@
                             href="admin/pages/dashboard-fauna.php">Fauna</a></li>
                     <li class="menu4"><img src="assets/image/guest-sidebar.png">
                         <a href="admin/pages/user.php">Data User</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-bawah">
+                <ul>
+                    <li class="menu5"><img src="assets/image/home.svg"><a href="index.php">Homepage</a>
                     </li>
                 </ul>
             </div>

@@ -64,7 +64,7 @@ if (isset($_POST['simpan'])) {
 
     <div class="edit-profile-page">
 
-        <a href="profil.php" class="back-button">←</a>
+        <a href="pages/profil.php" class="back-button">←</a>
 
         <form class="edit-profile-card" method="POST" enctype="multipart/form-data">
             <h2>Edit Profil</h2>

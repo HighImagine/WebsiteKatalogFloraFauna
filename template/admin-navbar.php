@@ -17,22 +17,12 @@ if (isset($_SESSION['id'])) {
 <head>
     <?php include 'head.php'; ?>
     <?php include __DIR__ . '/../cek.php'; ?>
-    <link rel="stylesheet" href="css/admin-navbar.css"
+    <link rel="stylesheet" href="css/admin-navbar.css">
 </head>
 
 <body>
     <div class="header">
         <div class="header-kanan">
-            <div class="searching">
-                <form action="admin/index.php" method="GET">
-                    <input type="hidden" name="page" value="cari">
-                    <input class="search-input" type="text" name="keyword" placeholder="Cari data flora & fauna..."
-                        value="<?php echo isset($_GET['keyword']) ? htmlspecialchars($_GET['keyword']) : ''; ?>">
-                    <button type="submit" style="background: none; border: none; cursor: pointer; font-size: 16px;">
-                        <img src="assets/image/search.svg" width="20">
-                    </button>
-                </form>
-            </div>
 
             <?php
             $foto = !empty($navUser['foto'])
@@ -44,12 +34,7 @@ if (isset($_SESSION['id'])) {
                 <img src="uploads/pfp/<?= htmlspecialchars($foto); ?>" class="navbar-profile-img" id="profileBtn">
 
                 <div class="admin-dropdown" id="adminDropdownMenu">
-                    <div class="dropdown-admin">
-                        <?= htmlspecialchars($navUser['username']); ?>
-                    </div>
-
-                    <a href="pages/profil.php">Profil</a>
-                    <a href="index.php">Homepage</a>
+                    <a href="admin/pages/dashboard-utama.php">Profil Saya</a>
                     <a href="logout.php" onclick="return confirm('Yakin ingin Logout?')">Logout</a>
                 </div>
             </div>

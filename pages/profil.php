@@ -22,7 +22,7 @@ $user = $result->fetch_assoc();
 <body>
 
 <div class="profile-page">
-    <a href="index.php" class="back-button">←</a>
+    <a href="admin/pages/dashboard-utama.php" class="back-button">←</a>
     <div class="profile-card">
         <div class="profile-left">
             <img 

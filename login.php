@@ -112,6 +112,9 @@
                     <input class="input-password" type="password" name="password" placeholder="password" required>
                 </div>
                 <button class="form-send" type="submit" name="login">Login</button>
+                <div class="register">
+                    <a href="register.php">Belum punya akun? Register</a>
+                </div>
             </form>
 
             <div class="atau">

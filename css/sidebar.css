@@ -14,7 +14,11 @@
 }
 
 .sidebar-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
     padding-right: 10px;
 }
 
@@ -22,24 +26,30 @@
     padding-left: 20px;
     align-items: center;
 }
-
+.menu-bawah {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
 .logo {
     width: 100px;
     height: 80px;
     margin: 0;
 }
 
-.menu-atas ul {
+.menu-atas ul,
+.menu-bawah ul {
     list-style: none;
     text-align: left;
-
 }
 
-.menu-atas ul li {
+
+.menu-atas ul li,
+.menu-bawah ul li {
     margin: 20px 0;
 }
 
-.menu-atas li a {
+.menu-atas li a,
+.menu-bawah li a {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -47,7 +57,8 @@
     align-items: center;
 }
 
-.menu-atas li img {
+.menu-atas li img,
+.menu-bawah li img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -56,7 +67,8 @@
 .menu1,
 .menu2,
 .menu3,
-.menu4 {
+.menu4,
+.menu5 {
     display: flex;
     gap: 20px;
     cursor: pointer;

@@ -39,26 +39,18 @@ if (isset($_SESSION['id'])) {
             <?php if (isset($_SESSION['username'])): ?>
 
                 <?php
-                $foto = !empty($navUser['foto'])
-                    ? $navUser['foto']
-                    : 'assets/image/default-profile.png';
+                $foto = 'assets/image/default-profile.png';
+                if (!empty($navUser['foto'])) {
+                    $foto = $navUser['foto'];
+                }
                 ?>
 
                 <div class="profile-menu">
-                    <img src="uploads/pfp/<?= htmlspecialchars($navUser['foto']); ?>" class="navbar-profile-img"
+                    <img src="uploads/pfp/<?= htmlspecialchars($foto); ?>" class="navbar-profile-img"
                         id="profileBtn">
 
                     <div class="dropdown" id="dropdownMenu">
-                        <div class="dropdown-user">
-                            <?= $_SESSION['username']; ?>
-                        </div>
-
-                        <a href="pages/profil.php">Profil</a>
-                        <?php if (isset($_SESSION['level']) && $_SESSION['level'] == 'admin'): ?>
-                            <a href="admin/index.php?page=dashboard-utama">
-                                Dashboard Admin
-                            </a>
-                        <?php endif; ?>
+                        <a href="admin/pages/dashboard-utama.php">Profil Saya</a>
                         <a href="logout.php" onclick="return confirm('Yakin ingin Logout?')">Logout</a>
                     </div>
                 </div>
@@ -67,16 +59,13 @@ if (isset($_SESSION['id'])) {
                     <a href="login.php" class="login-btn">
                         Login
                     </a>
-                    <a href="register.php" class="register-btn">
-                        Register
-                    </a>
                 </div>
             <?php endif; ?>
         </div>
 
         <div class="menu">
+            <a href="index.php">Beranda</a>
             <a href="kategori.php">Kategori</a>
-            <a href="information.php">Informasi</a>
             <?php if (isset($_SESSION['id'])): ?>
                 <a href="pages/favorit.php">Favorit</a>
             <?php else: ?>
@@ -126,3 +115,4 @@ if (isset($_SESSION['id'])) {
         }
     </script>
 </body>
+</html>

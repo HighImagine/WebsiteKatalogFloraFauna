@@ -59,7 +59,7 @@ $query = $stmt->get_result();
                         </p>
 
                         <p class="deskripsi">
-                            <?= htmlspecialchars(mb_strimwidth($row['deskripsi'], 0, 120, "...")); ?>
+                            <?= htmlspecialchars(mb_strimwidth($row['deskripsi'], 0, 50, "...")); ?>
                         </p>
 
                     </div>

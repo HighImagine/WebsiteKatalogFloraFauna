@@ -202,9 +202,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid #B9FF66;
+            background: #b9ff66;
             border-radius: 100px;
-            color: white;
+            color: #222;
             text-decoration: none;
             font-family: 'Poppins', sans-serif;
             font-size: 13px;
@@ -212,8 +212,10 @@
         }
 
         .login-btn:hover {
-            background: #B9FF66;
-            color: #222;
+            border: 2px solid #b9ff66;
+            color: white;
+            background: none;
+            
         }
 
         .register-btn {

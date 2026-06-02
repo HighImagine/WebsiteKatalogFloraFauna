@@ -98,7 +98,19 @@
 .form-send:hover {
     transform: translateY(-5px);
 }
+.register {
+    font-family: 'poppins';
+    font-size: 14px;
+}
 
+.register a {
+    text-decoration: none;
+    color: black;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
 .atau {
     margin: 10px;
     font-family: 'poppins';

@@ -136,6 +136,11 @@
         <select name="kategori" required>
 
             <option value=""></option>
+            <?php $kategori = $_POST['kategori'];
+
+            if ($kategori == 'lainnya') {
+            $kategori = $_POST['kategori_lainnya'];
+            } ?>
 
             <?php if ($jenis == 'flora'): ?>
 
@@ -143,6 +148,7 @@
                 <option value="bunga">Bunga</option>
                 <option value="tanaman-buah">Tanaman Buah</option>
                 <option value="tanaman-obat">Tanaman Obat</option>
+                <option value="lainnya">Lainnya</option>
 
             <?php elseif ($jenis == 'fauna'): ?>
 
@@ -150,6 +156,7 @@
                 <option value="burung">Burung</option>
                 <option value="ikan">Ikan</option>
                 <option value="reptil">Reptil</option>
+                <option value="lainnya">Lainnya</option>
 
             <?php endif; ?>
 

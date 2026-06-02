@@ -112,7 +112,7 @@
                 <button class="form-send" type="submit" name="submit">Register</button>
             </form>
             <div class="or" style="font-family: 'Poppins';">
-                <span>or</span>
+                <span>atau</span>
             </div>
             <button class="google-btn">
                 <img src="assets/image/google.svg">

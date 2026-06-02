@@ -122,8 +122,6 @@ session_start();
                 <div class="keterangan_fakta_unik">
                     <h3>Corypha Utan<br>(Pohon Palem)</h3>
                     <br>
-                    <div class="line_teks_fakta_unik"></div>
-                    <br>
                     <p>* Palem raksasa ini hanya
                         berbunga sekali seumur hidup, lalu
                         mati.<br>
@@ -137,8 +135,6 @@ session_start();
                 <div class="keterangan_fakta_unik">
                     <h3>Coelogyne Pandurata<br>(Anggrek Hitam)</h3>
                     <br>
-                    <div class="line_teks_fakta_unik"></div>
-                    <br>
                     <p>* Memiliki warna gelap yang tidak
                         biasa, bahkan kehitaman.<br>
                         * Hanya tumbuh di daerah hutan
@@ -150,8 +146,6 @@ session_start();
             <div class="Kotak_fakta_unik_3 G3_fakta_unik">
                 <div class="keterangan_fakta_unik">
                     <h3>Diospyros Celebica<br>(Pohon Eboni)</h3>
-                    <br>
-                    <div class="line_teks_fakta_unik"></div>
                     <br>
                     <p>* Kayunya sangat keras, berwarna
                         hitam dan sangat mahal — disebut
@@ -166,8 +160,6 @@ session_start();
                 <div class="keterangan_fakta_unik">
                     <h3>Nepenthes Floresiana<br>(Kantong Semar)</h3>
                     <br>
-                    <div class="line_teks_fakta_unik"></div>
-                    <br>
                     <p>* Hanya ada di pulau Flores.<br>
                         * Kantongnya unik, bisa mencerna
                         serangga untuk<cite>....selengkapnya</cite>
@@ -178,8 +170,6 @@ session_start();
             <div class="Kotak_fakta_unik_5 G5_fakta_unik">
                 <div class="keterangan_fakta_unik">
                     <h3>Santalum Album<br>(Cendana)</h3>
-                    <br>
-                    <div class="line_teks_fakta_unik"></div>
                     <br>
                     <p>* Ditemukan di Nusa Tenggara Timur.<br>
                         * Aromanya khas dan digunakan
@@ -203,7 +193,7 @@ session_start();
         <div class="judul_flora">FLORA</div>
 
         <div class="kotak_flora">
-            <p>Beberapa Flora Kategori Bunga Yang Terkenal</p>
+            <p>Beberapa Flora Wallacea Terkenal</p>
 
             <div class="pengatur_kotak_flora">
                 <div class="pembentuk_flora_1 G1">
@@ -258,7 +248,7 @@ session_start();
         <div class="judul_fauna">FAUNA</div>
 
         <div class="kotak_fauna">
-            <p>Beberapa Fauna Kategori Bunga Yang Terkenal</p>
+            <p>Beberapa Fauna Wallacea Terkenal</p>
 
             <div class="pengatur_kotak_fauna">
                 <div class="pembentuk_fauna_1 G1">
