@@ -34,31 +34,33 @@ session_start();
     <?php endif; ?>
     <div class="landing">
         <div class="kotak_landing">
-            <div class="gambar_kotak_landing"></div>
-            <div class="h2_landing">
-                <h2>Jelajahi
-                    Keanekaragaman
+            <div class="hero-content">
+                <h2>
+                    Jelajahi<br>
+                    Keanekaragaman<br>
                     Wallacea
                 </h2>
+
+                <p>
+                    Temukan Flora Fauna Wallacea dengan informasi lengkap dan menarik.
+                </p>
+
+                <a href="kategori.php" class="baca_sekarang">
+                    Baca Sekarang
+                </a>
             </div>
-            <div class="h5_landing">
-                <h4>Temukan Flora Fauna Wallacea dengan informasi lengkap
-                    dan menarik.
-                </h4>
-            </div>
-            <button class="container_baca_sekarang">
-                <a href="kategori.php" class="baca_sekarang">Baca Sekarang</a>
-            </button>
+
+            <div class="gambar_kotak_landing"></div>
         </div>
         <?php if (!isset($_SESSION['username'])): ?>
 
             <div class="CTA-register">
                 <p>
-                    Sign in untuk menyimpan Flora Fauna favoritmu!
+                    Login untuk menyimpan Flora Fauna favoritmu!
                 </p>
 
-                <a href="register.php" class="register-btn">
-                    Register
+                <a href="login.php" class="register-btn">
+                    Login
                 </a>
             </div>
 
@@ -81,29 +83,29 @@ session_start();
             </div>
             <div class="teks_rekomendasi">
                 <h3>MAMALIA</h3>
-                <p>ANOA DPRESSICORNIS
-                    <br>
-                    BABYROUSA BABYRUSSA
-                    <br>
-                    PTEROPUS VAMPYRUS
+                <a href="detail.php?id=24">ANOA DEPRESSICORNIS</a>
+                <br>
+                BABYROUSA BABYRUSSA
+                <br>
+                PTEROPUS VAMPYRUS
                 </p>
             </div>
             <div class="teks_rekomendasi">
                 <h3>BUNGA</h3>
                 <p>ETLINGERA ELATIOR
                     <br>
-                    AMORPHOPHALLUS TITANIUM
+                    <a href="detail.php?=1">AMORPHOPPALLUS TITANUM</a>
                     <br>
                     DENDROBIUM PHALAENOPSIS
                 </p>
             </div>
             <div class="teks_rekomendasi_kanan">
                 <h3>REPTIL</h3>
-                <p>VARANUS KOMODOENSIS
-                    <br>
-                    CROCODYLUS POROSUS
-                    <br>
-                    CHELONIA MYDAS
+                <a href="detail.php?id=16">VARANUS KOMODIENSIS</a>
+                <br>
+                CROCODYLUS POROSUS
+                <br>
+                CHELONIA MYDAS
                 </p>
             </div>
 
@@ -118,62 +120,72 @@ session_start();
 
         <div class="all_kotak_fakta_unik">
 
-            <div class="Kotak_fakta_unik_1 G1_fakta_unik">
+            <div class="Kotak_fakta_unik">
+                <div class="fakta-img G1_fakta_unik"></div>
+
                 <div class="keterangan_fakta_unik">
                     <h3>Corypha Utan<br>(Pohon Palem)</h3>
-                    <br>
-                    <p>* Palem raksasa ini hanya
-                        berbunga sekali seumur hidup, lalu
-                        mati.<br>
-                        * Bisa tumbuh hingga 20 meter
-                        sebelum<cite>....selengkapnya</cite>
+
+                    <p>
+                        * Palem raksasa ini hanya berbunga sekali seumur hidup, lalu mati.<br>
+                        * Bisa tumbuh hingga 20 meter sebelum...
+                        <cite>selengkapnya</cite>
                     </p>
                 </div>
             </div>
 
-            <div class="Kotak_fakta_unik_2 G2_fakta_unik">
+            <div class="Kotak_fakta_unik">
+                <div class="fakta-img G2_fakta_unik"></div>
+
                 <div class="keterangan_fakta_unik">
                     <h3>Coelogyne Pandurata<br>(Anggrek Hitam)</h3>
-                    <br>
-                    <p>* Memiliki warna gelap yang tidak
-                        biasa, bahkan kehitaman.<br>
-                        * Hanya tumbuh di daerah hutan
-                        hujan tertentu di Wallacea, sangat<cite>....selengkapnya</cite>
+
+                    <p>
+                        * Memiliki warna gelap yang tidak biasa.<br>
+                        * Hanya tumbuh di daerah hutan hujan tertentu...
+                        <cite>selengkapnya</cite>
                     </p>
                 </div>
             </div>
 
-            <div class="Kotak_fakta_unik_3 G3_fakta_unik">
+            <div class="Kotak_fakta_unik">
+                <div class="fakta-img G3_fakta_unik"></div>
+
                 <div class="keterangan_fakta_unik">
                     <h3>Diospyros Celebica<br>(Pohon Eboni)</h3>
-                    <br>
-                    <p>* Kayunya sangat keras, berwarna
-                        hitam dan sangat mahal — disebut
-                        juga “kayu hitam”.<br>
-                        * Pertumbuhannya sangat lambat
-                        dan hanya<cite>....selengkapnya</cite>
+
+                    <p>
+                        * Kayunya sangat keras dan mahal.<br>
+                        * Pertumbuhannya sangat lambat...
+                        <cite>selengkapnya</cite>
                     </p>
                 </div>
             </div>
 
-            <div class="Kotak_fakta_unik_4 G4_fakta_unik">
+            <div class="Kotak_fakta_unik">
+                <div class="fakta-img G4_fakta_unik"></div>
+
                 <div class="keterangan_fakta_unik">
                     <h3>Nepenthes Floresiana<br>(Kantong Semar)</h3>
-                    <br>
-                    <p>* Hanya ada di pulau Flores.<br>
-                        * Kantongnya unik, bisa mencerna
-                        serangga untuk<cite>....selengkapnya</cite>
+
+                    <p>
+                        * Hanya ada di Pulau Flores.<br>
+                        * Kantongnya dapat mencerna serangga...
+                        <cite>selengkapnya</cite>
                     </p>
                 </div>
             </div>
 
-            <div class="Kotak_fakta_unik_5 G5_fakta_unik">
+            <div class="Kotak_fakta_unik">
+                <div class="fakta-img G5_fakta_unik"></div>
+
                 <div class="keterangan_fakta_unik">
                     <h3>Santalum Album<br>(Cendana)</h3>
-                    <br>
-                    <p>* Ditemukan di Nusa Tenggara Timur.<br>
-                        * Aromanya khas dan digunakan
-                        <cite>....selengkapnya</cite>
+
+                    <p>
+                        * Ditemukan di Nusa Tenggara Timur.<br>
+                        * Aromanya khas dan banyak digunakan...
+                        <cite>selengkapnya</cite>
                     </p>
                 </div>
             </div>
@@ -228,8 +240,8 @@ session_start();
                     Buat akun untuk membuat koleksi flora favoritmu!
                 </p>
 
-                <a href="register.php" class="register-btn">
-                    Register
+                <a href="login.php" class="register-btn">
+                    Login
                 </a>
             </div>
 
@@ -251,18 +263,18 @@ session_start();
             <p>Beberapa Fauna Wallacea Terkenal</p>
 
             <div class="pengatur_kotak_fauna">
-                <div class="pembentuk_fauna_1 G1">
+                <a href="detail.php?id=24" class="pembentuk_fauna_1 G1">
                     <p>Anoa</p>
-                </div>
+                </a>
                 <div class="pembentuk_fauna_2 G2">
                     <p>Babi Rusa</p>
                 </div>
                 <div class="pembentuk_fauna_3 G3">
                     <p>Burung Maleo</p>
                 </div>
-                <div class="pembentuk_fauna_4 G4">
+                <a href="detail.php?id=16" class="pembentuk_fauna_4 G4">
                     <p>Komodo</p>
-                </div>
+                </a>
                 <div class="pembentuk_fauna_5 G5">
                     <p>Kuskus</p>
                 </div>
@@ -280,11 +292,11 @@ session_start();
 
             <div class="CTA-register">
                 <p>
-                    Buat akun untuk membuat koleksi fauna favoritmu!
+                    Login untuk membuat koleksi fauna favoritmu!
                 </p>
 
-                <a href="register.php" class="register-btn">
-                    Register
+                <a href="login.php" class="register-btn">
+                    Login
                 </a>
             </div>
 

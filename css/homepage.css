@@ -10,73 +10,66 @@
     height: 880px;
     background-position: center;
     background-size: cover;
-    border: none;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 45px;
 }
 
 .kotak_landing {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e8ffc7;
     width: 950px;
     height: 380px;
+    background-color: #e8ffc7;
     border-radius: 15px;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    padding-left: 55px;
+    max-width: 560px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    line-height: 1.35;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 430px;
+    margin-bottom: 28px;
+    font-weight: 600;
+}
+
+.baca_sekarang {
+    display: inline-block;
+    background-color: #3E7B27;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: .2s;
+}
+
+.baca_sekarang:hover {
+    transform: translateY(-4px);
 }
 
 .gambar_kotak_landing {
     background-image: url(../assets/image/komodoCTA.png);
-    width: 30%;
+    width: 300px;
     height: 100%;
     background-position: center;
     background-size: cover;
-    float: right;
-}
-
-.h2_landing {
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    padding-top: 40px;
-    padding-left: 35px;
-    line-height: 60px;
-}
-
-.h5_landing {
-    font-family: 'Poppins', sans-serif;
-    padding-left: 35px;
-    padding-top: 10px;
-    line-height: 25px;
-}
-
-.container_baca_sekarang {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Poppins';
-    background-color: #3E7B27;
-    border: none;
-    font-size: 18px;
-    height: 40px;
-    width: 180px;
-    margin-left: 38px;
-    margin-top: 30px;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.container_baca_sekarang a {
-    color: white;
-    text-decoration: none;
-}
-
-.container_baca_sekarang:hover {
-    transform: translateY(-5px);
+    flex-shrink: 0;
 }
 
 .CTA-register {
@@ -169,6 +162,18 @@
     font-size: 25px;
 }
 
+.teks_rekomendasi a,
+.teks_rekomendasi_kanan a {
+    text-decoration: none;
+    color: black;
+}
+
+.teks_rekomendasi a:hover,
+.teks_rekomendasi_kanan a:hover {
+    color: #222;
+    font-weight: 600;
+}
+
 .green_line_2 {
     width: 100%;
     height: 18px;
@@ -203,23 +208,29 @@
     padding: 20px;
 }
 
-.Kotak_fakta_unik_1,
-.Kotak_fakta_unik_2,
-.Kotak_fakta_unik_3,
-.Kotak_fakta_unik_4,
-.Kotak_fakta_unik_5 {
+.Kotak_fakta_unik {
     margin-top: 50px;
     width: 170px;
-    height: 550px;
+    height: 500px;
     border-radius: 15px;
     overflow: hidden;
-    background-size: cover;
-    background-position: center;
+    background: white;
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
+}
+
+.Kotak_fakta_unik:hover {
+    transform: translateY(-10px);
+}
+
+.fakta-img {
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
 }
 
 .Kotak_fakta_unik_1:hover,
@@ -227,7 +238,7 @@
 .Kotak_fakta_unik_3:hover,
 .Kotak_fakta_unik_4:hover,
 .Kotak_fakta_unik_5:hover {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
 }
 
 .keterangan_fakta_unik {
@@ -252,26 +263,10 @@ cite {
     cursor: pointer;
 }
 
-.G1_fakta_unik .keterangan_fakta_unik p {
-    padding-top: 15px;
-}
-
-.G4_fakta_unik .keterangan_fakta_unik p {
-    padding-top: 33px;
-}
-
-.G5_fakta_unik .keterangan_fakta_unik p {
-    padding-top: 35px;
-}
-
-.line_teks_fakta_unik {
-    justify-content: center;
-    width: 140px;
-    border: 1px solid black;
-}
 
 .G1_fakta_unik {
     background-image: url(../assets/image/fakta_unik1.png);
+    background-position: center top;
 }
 
 .G2_fakta_unik {
@@ -280,6 +275,7 @@ cite {
 
 .G3_fakta_unik {
     background-image: url(../assets/image/fakta_unik3.png);
+    background-position: center top;
 }
 
 .G4_fakta_unik {
@@ -319,7 +315,7 @@ cite {
 
 .judul_flora {
     background-color: #FBEEC1;
-    width: 268px;
+    width: 284px;
     height: 45px;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -328,7 +324,7 @@ cite {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 22px;
-    margin-left: 147px;
+    margin-left: 156px;
 }
 
 .kotak_flora {
@@ -379,7 +375,7 @@ cite {
 .pembentuk_flora_5:hover,
 .pembentuk_flora_6:hover,
 .pembentuk_flora_7:hover {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
 }
 
 .pembentuk_flora_1 p,
@@ -458,7 +454,7 @@ cite {
 
 .judul_fauna {
     background-color: #FBEEC1;
-    width: 268px;
+    width: 284px;
     height: 45px;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -467,7 +463,7 @@ cite {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 22px;
-    margin-left: 147px;
+    margin-left: 156px;
 }
 
 .kotak_fauna {
@@ -507,6 +503,7 @@ cite {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    text-decoration: none;
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
 }
@@ -518,7 +515,7 @@ cite {
 .pembentuk_fauna_5:hover,
 .pembentuk_fauna_6:hover,
 .pembentuk_fauna_7:hover {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
 }
 
 .pembentuk_fauna_1 p,

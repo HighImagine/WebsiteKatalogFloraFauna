@@ -46,11 +46,14 @@ if (isset($_SESSION['id'])) {
                 ?>
 
                 <div class="profile-menu">
-                    <img src="uploads/pfp/<?= htmlspecialchars($foto); ?>" class="navbar-profile-img"
-                        id="profileBtn">
+                    <img src="uploads/pfp/<?= htmlspecialchars($foto); ?>" class="navbar-profile-img" id="profileBtn">
 
                     <div class="dropdown" id="dropdownMenu">
-                        <a href="admin/pages/dashboard-utama.php">Profil Saya</a>
+                        <?php if ($navUser['level'] == 'admin'): ?>
+                            <a href="admin/pages/dashboard-utama.php">Profil Saya</a>
+                        <?php else: ?>
+                            <a href="pages/profil.php">Profil Saya</a>
+                        <?php endif; ?>
                         <a href="logout.php" onclick="return confirm('Yakin ingin Logout?')">Logout</a>
                     </div>
                 </div>
@@ -115,4 +118,5 @@ if (isset($_SESSION['id'])) {
         }
     </script>
 </body>
+
 </html>
